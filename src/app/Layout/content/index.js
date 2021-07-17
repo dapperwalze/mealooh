@@ -6,7 +6,7 @@ const {Content}=Layout;
 const MealContent=()=>{
     return (
         <>
-            <Content>Content is placed here</Content>
+            <Content >Content is placed here</Content>
         </>
     );
 };
