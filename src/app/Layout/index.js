@@ -6,9 +6,8 @@ import { Layout } from 'antd';
 
 
 
-const MealLayout=(props)=>{
+const MealLayout=({children})=>{
 
-    const {children}=props;
     return (
         <>
             <Layout>
