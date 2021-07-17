@@ -1,17 +1,17 @@
-
-.container{
-  display:flex;
-  justify-content:space-evenly;
+.container {
+  display: flex;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
-  align-items:center;
-  background-color: #ec7b04 ;
-  color:#fff;
-  height:150px;
+  align-items: center;
+  background-color: #ec7b04;
+  color: #fff;
+  height: 150px;
 }
-.footer-item{
-
+.footer-item {
 }
 
-.copy-right{
-  color: #ec7b04
+.copy-right {
+  color: #fff;
+  background-color: #ec7b04;
+  text-align: center;
 }

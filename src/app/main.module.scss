@@ -1,0 +1,29 @@
+@import "~antd/dist/antd.css";
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px;
+}
+
+/*@media only screen and (min-width: 400px) and (max-width: 700px) {
+}
+@media only screen and (max-width: 399px) {
+}
+*/
