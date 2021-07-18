@@ -5,7 +5,6 @@ import { foodList } from "./../../../mealData/foodList";
 import { drinkList } from "./../../../mealData/drinkList";
 import styles from "./content.module.scss";
 import { Card } from "./../../../components/Card/index";
-
 const { Content } = Layout;
 
 const MealContent = () => {

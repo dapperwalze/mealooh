@@ -6,6 +6,8 @@ import "./normalize.css";
 const MealLayout = lazy(() => import("../app/Layout"));
 const LazyFallback = () => <h4>Loading...</h4>;
 
+
+
 const App = () => {
   return (
     <div className={styles.app}>
