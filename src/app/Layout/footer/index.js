@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Layout, Button, Input } from "antd";
+import { Logo } from "./../../../components/Logo/index";
 import styles from "./footer.module.scss";
 const { Footer } = Layout;
 
@@ -9,9 +10,7 @@ const MealFooter = () => {
     <>
       <Footer className={styles.footer} style={{ bottom: "0", width: "100%" }}>
         <section className={styles.footerItem}>
-          <span className={styles.footerLogo}>
-            <Link>MealOoh</Link>
-          </span>
+          <Logo />
         </section>
         <section className={styles.footerItem}>
           <nav className={styles.footerNav}>
