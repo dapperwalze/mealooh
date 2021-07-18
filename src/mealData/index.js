@@ -3,7 +3,7 @@ import {foodList} from "./foodList";
 import {meatList} from "./meatList";
 
 
+const allFoodItems=[...drinkList, ...foodList, ...meatList];
 
-export  {drinkList}
-export {foodList}
-export {meatList}
+
+export default allFoodItems;

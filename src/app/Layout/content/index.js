@@ -4,7 +4,6 @@ import { Layout, Card } from "antd";
 import { foodList } from "./../../../mealData/foodList";
 import { drinkList } from "./../../../mealData/drinkList";
 import styles from "./content.module.scss";
-
 const { Content } = Layout;
 
 const MealContent = () => {
