@@ -1,6 +1,5 @@
 //import logo from '../logo.svg';
 import React, { Suspense, lazy } from "react";
-import { foodList } from "../mealData";
 import styles from "./main.module.scss";
 import "./normalize.css";
 

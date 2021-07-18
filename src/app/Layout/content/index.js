@@ -1,38 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Layout, Card } from "antd";
+import { Layout } from "antd";
 import { foodList } from "./../../../mealData/foodList";
 import { drinkList } from "./../../../mealData/drinkList";
 import styles from "./content.module.scss";
+import { Card } from "./../../../components/Card/index";
 
 const { Content } = Layout;
 
 const MealContent = () => {
   const foodItems = foodList.map((item) => (
-    <Link to="#">
-      <Card hoverable className={styles.foodItemCard} style={{ width: 180 }}>
-        <div className={styles.itemImageContainer}>
-          <img className={styles.itemImage} alt={item.name} src={item.url} />
-        </div>
-        <div className={styles.itemDetails}>
-          <span className={styles.itemName}>{item.name}</span>
-          <span className={styles.itemPrice}>NGN {item.amount}.00</span>
-        </div>
-      </Card>
+    <Link key={item.id} to="#">
+      <Card
+        alt={item.name}
+        url={item.url}
+        name={item.name}
+        amount={item.amount}
+      />
     </Link>
   ));
 
-  const drinks = drinkList.map((drink) => (
+  const drinks = drinkList.map((item) => (
     <Link to="#">
-      <Card hoverable className={styles.foodItemCard} style={{ width: 180 }}>
-        <div className={styles.itemImageContainer}>
-          <img className={styles.itemImage} alt={drink.name} src={drink.url} />
-        </div>
-        <div className={styles.itemDetails}>
-          <span className={styles.itemName}>{drink.name}</span>
-          <span className={styles.itemPrice}>NGN {drink.amount}.00</span>
-        </div>
-      </Card>
+      <Card
+        alt={item.name}
+        url={item.url}
+        name={item.name}
+        amount={item.amount}
+      />
     </Link>
   ));
 

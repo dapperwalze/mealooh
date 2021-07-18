@@ -6,33 +6,8 @@ $primaryFontColor: #000;
 $secondaryFontColor: #fff;
 $bgColor: #ec7b04;
 
-.content {
-  width: 100%;
-  height: auto;
-  padding: 50px 75px;
-  margin-bottom: 150px;
-}
-.popularMealsSection {
-  width: 100%;
-  margin-bottom: 100px;
-}
-.sectionHeader {
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  font-weight: $fontWeight;
-  color: $primaryFontColor;
-  margin-bottom: 30px;
-}
-.foodItemsContainer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  column-gap: 25px;
-  row-gap: 50px;
-}
 .itemCard {
+  width: 180px;
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
   &:hover {
