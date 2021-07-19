@@ -7,7 +7,7 @@ import styles from "./header.module.scss";
 const { Header } = Layout;
 
 
-const MealHeader = () => {
+const PageHeader = () => {
   return (
     <>
       <Header className={styles.header}>
@@ -31,4 +31,4 @@ const MealHeader = () => {
   );
 };
 
-export default MealHeader;
+export default PageHeader;

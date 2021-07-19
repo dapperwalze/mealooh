@@ -8,7 +8,7 @@ import styles from "./content.module.scss";
 import { Card } from "./../../../components/Card/index";
 const { Content } = Layout;
 
-const MealContent = () => {
+const PageContent = () => {
   const foodItems = foodList.map((item) => (
     <Link key={item.id} to="#">
       <Card
@@ -50,4 +50,4 @@ const MealContent = () => {
   );
 };
 
-export default MealContent;
+export default PageContent;
