@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "antd/dist/antd.css";
 import { Layout } from "antd";
 import { foodList } from "./../../../mealData/foodList";
 import { drinkList } from "./../../../mealData/drinkList";
