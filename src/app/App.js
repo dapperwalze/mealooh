@@ -1,5 +1,6 @@
 //import logo from '../logo.svg';
 import React, { Suspense, lazy } from "react";
+import 'antd/dist/antd.min.css';
 import styles from "./main.module.scss";
 import "./normalize.css";
 const MealLayout = lazy(() => import("../app/Layout"));

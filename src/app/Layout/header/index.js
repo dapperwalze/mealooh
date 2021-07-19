@@ -1,29 +1,32 @@
 import React from "react";
-import { Layout, Input, Space } from "antd";
+import { Layout, Input } from "antd";
 import { Logo } from "./../../../components/Logo/index";
-import {SearchBar} from "./../../../components/SearchBox/SearchBar";
 
 import styles from "./header.module.scss";
 const { Header } = Layout;
+const { Search } = Input;
 
-
-const MealHeader = () => {
+const onSearch = value => console.log(value);
+const PageHeader = () => {
   return (
     <>
-      <Header className={styles.header}>
+      <Header className={styles.header} theme={'light'}>
 
-              <div className={styles.leftside}>
-                  <div className={styles.leftside1}>
-                      <Logo/>
-                  </div>
-                  <div className={styles.leftside2}>
-                    <SearchBar/>
-                  </div>
-              </div>
-              <div className={styles.rightside}>
-                         <a href={"#"}>Home</a>
-                         <a href={"#"}>Cart</a>
-                         <a href={"#"}>Order history</a>
+            <div className={styles.headerleft}>
+
+            </div>
+
+              <div className={styles.headerright}>
+                       <Search
+                           placeholder="input search text"
+                           onSearch={onSearch}
+                           enterButton />
+
+                       <nav>
+                           <a href={"#"}>Home</a>
+                           <a href={"#"}>Cart</a>
+                           <a href={"#"}>Order history</a>
+                       </nav>
               </div>
 
       </Header>
@@ -31,4 +34,4 @@ const MealHeader = () => {
   );
 };
 
-export default MealHeader;
+export default PageHeader;
