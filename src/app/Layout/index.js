@@ -1,22 +1,22 @@
 import React from "react";
-import MealHeader from "./header"
-import MealFooter from "./footer"
-import MealContent from "./content"
+import PageHeader from "./header"
+import PageFooter from "./footer"
+import PageContent from "./content"
 import { Layout } from 'antd';
 
 
 
-const MealLayout=({children})=>{
+const PageLayout=({children})=>{
 
     return (
         <>
             <Layout>
-                <MealHeader/>
-                <MealContent>{children}</MealContent>
-                <MealFooter/>
+                <PageHeader/>
+                <PageContent>{children}</PageContent>
+                <PageFooter/>
             </Layout>
 
         </>
     );
 };
-export default MealLayout;
+export default PageLayout;
