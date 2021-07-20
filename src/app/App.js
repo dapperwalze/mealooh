@@ -1,4 +1,5 @@
 import React, { Suspense, lazy } from "react";
+import "antd/dist/antd.min.css";
 import styles from "./main.module.scss";
 import "./normalize.css";
 

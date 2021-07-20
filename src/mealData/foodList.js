@@ -6,7 +6,7 @@ export const foodList = [
     name: "boiled beans",
     type: "food",
     amount: "200",
-    url: "https://www.w3schools.com/w3images/nature.jpg",
+    url: "appImages/foods/boiledbeans.png",
     description: "",
   },
 

@@ -7,3 +7,12 @@
   height: inherit;
   object-fit: cover;
 }
+.modal {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  word-wrap: break-word;
+  text-transform: capitalize;
+}

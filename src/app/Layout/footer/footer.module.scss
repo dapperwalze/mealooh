@@ -13,8 +13,6 @@ $bgColor: #ec7b04;
   background-color: #fff;
   padding: 20px 70px 50px 70px;
   border-top: 2px solid #eee;
-  border-bottom: 2px solid #000;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -62,6 +60,9 @@ $bgColor: #ec7b04;
 }
 .subscribeButton {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $primaryFontColor;
   font-family: $fontFamily;
   font-size: $fontSize;

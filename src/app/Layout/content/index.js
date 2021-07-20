@@ -4,7 +4,7 @@ import { Layout } from "antd";
 import { DisplayItems } from "./../../../pages/DisplayItems/index";
 import { Cart } from "./../../../pages/Cart/index";
 import { OrderHistory } from "./../../../pages/OrderHistory/index";
-import { ModalComponent } from "./../../../components/Modal/index";
+import { ModalComponent } from "./../../../components/Modal/Modal";
 import styles from "./content.module.scss";
 
 const { Content } = Layout;
@@ -16,7 +16,7 @@ const PageContent = () => {
 
   return (
     <Content className={styles.content}>
-      <Switch>
+      <Switch location={background || location}>
         <Route exact path="/">
           <DisplayItems setIsModalVisible={setIsModalVisible} />
         </Route>

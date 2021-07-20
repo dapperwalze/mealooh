@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Layout, Button, Input } from "antd";
 import { Logo } from "./../../../components/Logo/index";
 import styles from "./footer.module.scss";
+
 const { Footer } = Layout;
 
 const PageFooter = () => {

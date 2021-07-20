@@ -18,16 +18,21 @@ export const ModalComponent = ({ isModalVisible, setIsModalVisible }) => {
 
   return (
     <Modal
-      title={image.title}
+      title={image.name}
       visible={isModalVisible}
       onOk={handleCancel}
       onCancel={handleCancel}
       okButtonProps={{ disabled: false }}
       cancelButtonProps={{ disabled: false }}
       centered
+      className={styles.modal}
     >
       <div className={styles.imageCard}>
-        <img className={styles.image} alt={image.name} src={image.url} />
+        <img
+          className={styles.image}
+          alt={image.name}
+          src={`../../${image.url}`}
+        />
       </div>
     </Modal>
   );
