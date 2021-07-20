@@ -38,7 +38,7 @@ const PageContent = () => {
       <Content className={styles.content}>
         <section className={styles.popularMealsSection}>
           <h2 className={styles.sectionHeader}>Most Popular</h2>
-          <div className={styles.foodItemsContainer} >{foodItems}</div>
+          <div className={styles.foodItemsContainer}>{foodItems}</div>
         </section>
 
         <section className={styles.allMealsSection}>
