@@ -1,18 +1,57 @@
-.imageCard {
+$fontFamily: "Quicksand", sans-serif;
+$fontSize: 1rem;
+$lineHeight: 25px;
+$fontWeight: 500;
+$primaryFontColor: #000;
+$secondaryFontColor: #fff;
+$bgColor: #ec7b04;
+
+.modal {
+  margin: 0;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  $lineHeight: $lineHeight;
+  color: $primaryFontColor;
+  word-wrap: break-word;
+  text-transform: capitalize;
+}
+.imageCardSection {
   width: 100%;
-  height: 400px;
+  height: 250px;
 }
 .image {
   width: 100%;
   height: inherit;
   object-fit: cover;
 }
-.modal {
-  margin: 0;
-  color: rgba(0, 0, 0, 0.85);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  word-wrap: break-word;
-  text-transform: capitalize;
+.selectedItemDetailsSection {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 6px;
+}
+
+.selectedItemPriceAndQty {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 6px 0px;
+}
+.itemDescription {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.descriptionContent {
+  font-family: $fontFamily;
+  font-size: 0.875rem;
+  font-weight: $fontWeight;
+  color: $primaryFontColor;
+  $lineHeight: $lineHeight;
+  text-transform: none;
+  text-align: justify;
+  word-wrap: normal;
 }
