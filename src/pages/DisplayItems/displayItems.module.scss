@@ -1,0 +1,27 @@
+$fontFamily: "Quicksand", sans-serif;
+$fontSize: 1.5rem;
+$lineHeight: 25px;
+$fontWeight: 500;
+$primaryFontColor: #000;
+$secondaryFontColor: #fff;
+$bgColor: #ec7b04;
+
+.contentSection {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.sectionHeader {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $primaryFontColor;
+  margin-bottom: 30px;
+}
+.foodItemsContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 25px;
+  row-gap: 50px;
+}

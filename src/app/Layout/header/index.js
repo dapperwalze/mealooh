@@ -3,7 +3,7 @@ import { Layout } from "antd";
 
 const { Header } = Layout;
 
-const MealHeader = () => {
+const PageHeader = () => {
   return (
     <>
       <Header>Header is placed here</Header>
@@ -11,4 +11,4 @@ const MealHeader = () => {
   );
 };
 
-export default MealHeader;
+export default PageHeader;

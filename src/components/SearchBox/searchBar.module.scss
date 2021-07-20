@@ -1,0 +1,53 @@
+
+$fontFamily: "Quicksand", sans-serif;
+$fontSize: 1.125rem;
+$lineHeight: 25px;
+$fontWeight: 500;
+$primaryFontColor: #000;
+$secondaryFontColor: #25f525;
+$bgColor: #ec7b04;
+
+.inputSearch{
+  width: 100%;
+  box-shadow: none;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  margin:  0;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  white-space:nowrap;
+  &:hover{
+    border-color: black;
+  }
+    &:focus{
+      border:0.5px solid black;
+      box-shadow: none;
+    }
+}
+
+.subscribeButton {
+  background-color: black !important;
+  border:none;
+  top:0;
+  max-width: 100px;
+  margin: 10px 0;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    color:$secondaryFontColor ;
+  }
+}
+
+
+.form{
+  padding-right:40px;
+  margin-top:0;
+  position:relative;
+
+}

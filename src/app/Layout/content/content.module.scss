@@ -1,75 +1,7 @@
-$fontFamily: "Quicksand", sans-serif;
-$fontSize: 1.5rem;
-$lineHeight: 25px;
-$fontWeight: 500;
-$primaryFontColor: #000;
-$secondaryFontColor: #fff;
-$bgColor: #ec7b04;
-
 .content {
   width: 100%;
-  height: auto;
-  padding: 50px 75px;
-  margin-bottom: 150px;
-}
-.popularMealsSection {
-  width: 100%;
-  margin-bottom: 100px;
-}
-.sectionHeader {
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  font-weight: $fontWeight;
-  color: $primaryFontColor;
-  margin-bottom: 30px;
-}
-.foodItemsContainer {
-  width: 100%;
-  height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  column-gap: 25px;
-  row-gap: 50px;
-}
-.itemCard {
-  border-radius: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
-  &:hover {
-    .itemDetails {
-      background-color: #008000;
-    }
-  }
-}
-
-.itemImageContainer {
-  width: 100%;
-  height: 120px;
-}
-.itemImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.itemDetails {
-  width: 100%;
-  background-color: $bgColor;
-  padding: 5px 0px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.itemName,
-.itemPrice {
-  width: 100%;
-  font-family: $fontFamily;
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: $lineHeight;
-  color: $secondaryFontColor;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: capitalize;
+  padding: 50px 75px;
+  margin-bottom: 150px;
 }

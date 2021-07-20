@@ -1,0 +1,65 @@
+$fontFamily: "Quicksand", sans-serif;
+$fontSize: 1.125rem;
+$lineHeight: 25px;
+$fontWeight: 500;
+$primaryFontColor: #000;
+$secondaryFontColor: #25f525;
+$bgColor: #ec7b04;
+
+
+.header{
+    color: white;
+    font-family:$fontFamily;
+    background-color: #fff ;
+    border-bottom: 1px solid #f00;
+    height:80px;
+    margin-top:10px;
+    display:flex;
+    flex-wrap:nowrap;
+}
+
+.leftside {
+    flex: 75%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    white-space: nowrap;
+    column-gap: 20px;
+    margin-right: 80px;
+    padding-top: 20px;
+}
+.leftside2{
+    margin-top:-20px;
+}
+
+.rightside{
+    flex:25%;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:flex-end;
+    align-items:center;
+    column-gap: 25px;
+    white-space:nowrap;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    color: $primaryFontColor;
+a{
+    color:$primaryFontColor;
+&:hover {
+     color:$secondaryFontColor ;
+ }
+}
+&:last-child {
+     margin-right:100px;
+ }
+
+}
+
+.searchbar{
+    width:300px;
+}
+

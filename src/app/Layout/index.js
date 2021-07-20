@@ -1,22 +1,16 @@
 import React from "react";
-import MealHeader from "./header"
-import MealFooter from "./footer"
-import MealContent from "./content"
-import { Layout } from 'antd';
+import { Layout } from "antd";
+import PageHeader from "./header";
+import PageFooter from "./footer";
+import PageContent from "./content";
 
-
-
-const MealLayout=({children})=>{
-
-    return (
-        <>
-            <Layout>
-                <MealHeader/>
-                <MealContent>{children}</MealContent>
-                <MealFooter/>
-            </Layout>
-
-        </>
-    );
+const PageLayout = ({ children }) => {
+  return (
+    <Layout>
+      <PageHeader />
+      <PageContent>{children}</PageContent>
+      <PageFooter />
+    </Layout>
+  );
 };
-export default MealLayout;
+export default PageLayout;
