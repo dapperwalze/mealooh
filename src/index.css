@@ -15,3 +15,8 @@ code {
 .ant-btn-primary{
   background:black !important;
 }
+
+.ant-layout-header{
+  height:70px;
+  padding: 10px 90px !important;
+}

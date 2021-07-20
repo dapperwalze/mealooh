@@ -4,12 +4,14 @@ import { Layout } from "antd";
 import { DisplayItems } from "./../../../pages/DisplayItems/index";
 import { Cart } from "./../../../pages/Cart/index";
 import { OrderHistory } from "./../../../pages/OrderHistory/index";
-import { ModalComponent } from "./../../../components/Modal/Modal";
 import styles from "./content.module.scss";
+import { ModalComponent } from "../../../components/Modal/Modal";
 
 const { Content } = Layout;
 
 const PageContent = () => {
+
+
   const [isModalVisible, setIsModalVisible] = useState(false);
   let location = useLocation();
   let background = location.state && location.state.background;
@@ -29,10 +31,10 @@ const PageContent = () => {
       </Switch>
       {background && (
         <Route path="/meals/item-details/:id">
-          <ModalComponent
-            isModalVisible={isModalVisible}
-            setIsModalVisible={setIsModalVisible}
-          />
+            <ModalComponent
+                isModalVisible={isModalVisible}
+                setIsModalVisible={setIsModalVisible}
+            />
         </Route>
       )}
     </Content>
