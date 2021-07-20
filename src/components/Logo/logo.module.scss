@@ -5,6 +5,14 @@ $fontWeight: 500;
 $primaryFontColor: #000;
 $secondaryFontColor: #25f525;
 
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  
+}
 .logoLink {
   align-self: center;
   font-family: $fontFamily;

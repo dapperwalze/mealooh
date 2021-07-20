@@ -4,45 +4,43 @@ $lineHeight: 25px;
 $fontWeight: 500;
 $primaryFontColor: #000;
 $secondaryFontColor: #25f525;
-$bgColor: #ec7b04;
+
 
 .header {
+  width: 100% !important;
+  margin: auto;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center !important;
+  align-content: center !important;
   background: white !important;
-  padding-top: 40px !important;
-  padding-bottom: 40px !important;
-  border-bottom: 0.5px solid black;
+  border-bottom: 2px solid #eee;
   font-family: $fontFamily;
+  padding: 60px 80px  !important;
 }
-.headerleft {
-  margin-top: 15px;
-  margin-right: 5px;
-}
-.headerright {
+
+.headerFeatures {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  column-gap: 50px;
   align-items: center !important;
-  a {
-    color: black !important;
-  }
+ 
+ 
 }
-.search {
-  margin-top: 30px;
-  margin-right: 40px;
+.navLinkGroup{
+  display: flex;
+  gap: 30px;
 }
-.links {
-  padding-top: 0;
-  white-space: nowrap;
-  a {
-    padding-left: 20px;
-    padding-right: 20px;
+
+.headerNavLink {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $primaryFontColor;
+  &:hover {
+    color: $secondaryFontColor;
   }
 }
 
-.search {
-  margin-bottom: 0;
-}
+

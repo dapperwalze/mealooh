@@ -1,0 +1,36 @@
+$fontFamily: "Montserrat", sans-serif;
+$fontSize: 0.875rem;
+$lineHeight: 17.71px;
+$fontWeight: 400;
+$fontColor: #8f8b8b;
+.searchBox {
+  width: 319px;
+  height: 45px;
+  position: relative;
+  border: 0.5px solid #bdbdbd;
+  border-radius: 2px;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  
+}
+.form{
+  display: flex;
+}
+
+.searchIcon {
+  position: absolute;
+  bottom: 9px;
+  right: 10px;
+}
+.searchField {
+  border: none;
+  height: 100%;
+  outline: none;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $fontColor;
+  line-height: $lineHeight;
+  padding: 5px 5px 5px 30px;
+}
