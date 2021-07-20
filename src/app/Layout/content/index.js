@@ -7,12 +7,10 @@ import { foodList } from "./../../../mealData/foodList";
 import { drinkList } from "./../../../mealData/drinkList";
 import styles from "./content.module.scss";
 import { Card } from "./../../../components/Card/index";
-import ModalComponent from "./../../../components/Modal/Modal";
 const { Content } = Layout;
 
 
 const PageContent = () => {
-    const [isModal, setIsModal]=useState(false);
   const foodItems = foodList.map((item) => (
     <Link key={item.id} to="#">
       <Card
@@ -40,7 +38,7 @@ const PageContent = () => {
       <Content className={styles.content}>
         <section className={styles.popularMealsSection}>
           <h2 className={styles.sectionHeader}>Most Popular</h2>
-          <div className={styles.foodItemsContainer} onClick={()=>setIsModal(true)}>{foodItems}</div>
+          <div className={styles.foodItemsContainer} >{foodItems}</div>
         </section>
 
         <section className={styles.allMealsSection}>
@@ -51,7 +49,6 @@ const PageContent = () => {
         </section>
       </Content>
 
-        <ModalComponent isModal={isModal}/>
     </>
   );
 };
