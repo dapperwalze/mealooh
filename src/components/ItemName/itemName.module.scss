@@ -1,0 +1,13 @@
+$fontFamily: "Quicksand", sans-serif;
+$fontSize: 1rem;
+$lineHeight: 25px;
+$fontWeight: 500;
+$primaryFontColor: #000;
+
+.selectedItemName {
+  // padding: 6px 0px;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  $lineHeight: $lineHeight;
+}

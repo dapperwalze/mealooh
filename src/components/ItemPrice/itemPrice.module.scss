@@ -1,0 +1,13 @@
+$fontFamily: "Quicksand", sans-serif;
+$fontSize: 0.875rem;
+$lineHeight: 25px;
+$fontWeight: 500;
+$primaryFontColor: #000;
+
+.selectedItemPrice {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  $lineHeight: $lineHeight;
+  color: $primaryFontColor;
+}

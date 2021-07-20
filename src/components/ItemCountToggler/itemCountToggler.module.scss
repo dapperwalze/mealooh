@@ -1,0 +1,34 @@
+$fontFamily: "Quicksand", sans-serif;
+$fontSize: 0.875rem;
+$lineHeight: 25px;
+$fontWeight: 600;
+$primaryFontColor: #000;
+
+.selectedProductCountContainer {
+  border: 2px solid #336ecf;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+.decrementButton,
+.incrementButton {
+  height: 100%;
+  width: 23px;
+  background-color: #e9eff9;
+  color: #336ecf;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.selectedProductCountValue {
+  color: $primaryFontColor;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: 500;
+  text-align: center;
+}
