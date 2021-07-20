@@ -14,9 +14,8 @@ $bgColor: #ec7b04;
   padding: 20px 70px 50px 70px;
   border-top: 2px solid #eee;
   display: flex;
-  //flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
-  flex-wrap: nowrap;
 }
 .footerItem {
   height: auto;
@@ -61,6 +60,9 @@ $bgColor: #ec7b04;
 }
 .subscribeButton {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $primaryFontColor;
   font-family: $fontFamily;
   font-size: $fontSize;

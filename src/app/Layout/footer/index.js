@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { Layout, Button, Input } from "antd";
 import { Logo } from "./../../../components/Logo/index";
 import styles from "./footer.module.scss";
-import { Card } from "./../../../components/Card/index";
+
 const { Footer } = Layout;
 
-const MealFooter = () => {
+const PageFooter = () => {
   return (
     <>
       <Footer className={styles.footer} style={{ bottom: "0", width: "100%" }}>
@@ -18,10 +18,10 @@ const MealFooter = () => {
             <Link className={styles.footerLink} to="/">
               Home
             </Link>
-            <Link className={styles.footerLink} to="/">
+            <Link className={styles.footerLink} to="/order-history">
               Order History
             </Link>
-            <Link className={styles.footerLink} to="/">
+            <Link className={styles.footerLink} to="/cart">
               Cart
             </Link>
           </nav>
@@ -54,4 +54,4 @@ const MealFooter = () => {
   );
 };
 
-export default MealFooter;
+export default PageFooter;

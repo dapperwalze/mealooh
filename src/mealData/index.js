@@ -1,9 +1,7 @@
-import {drinkList} from "./drinkList";
-import {foodList} from "./foodList";
-import {meatList} from "./meatList";
+import { drinkList } from "./drinkList";
+import { foodList } from "./foodList";
+import { meatList } from "./meatList";
 
-
-const allFoodItems=[...drinkList, ...foodList, ...meatList];
-
+const allFoodItems = [...foodList, ...meatList, ...drinkList];
 
 export default allFoodItems;

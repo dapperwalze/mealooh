@@ -4,7 +4,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "boiled beans",
-    type:"food",
+    type: "food",
     amount: "200",
     url: "appImages/foods/boiledbeans.png",
     description: "",
@@ -13,7 +13,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "porridge beans",
-    type:"food",
+    type: "food",
     amount: "250",
     url: "appImages/foods/porridgebeans.png",
     description: "",
@@ -21,7 +21,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "white rice with stew",
-    type:"food",
+    type: "food",
     amount: "500",
     url: "appImages/foods/whiterice_stew.png",
     description: "",
@@ -29,7 +29,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "fried rice",
-    type:"food",
+    type: "food",
     amount: "500",
     url: "appImages/foods/friedrice.png",
     description: "",
@@ -38,7 +38,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "jollof rice",
-    type:"food",
+    type: "food",
     amount: "500",
     url: "appImages/foods/jollof_rice.png",
     description: "",
@@ -47,7 +47,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "spaghetti with stew",
-    type:"food",
+    type: "food",
     amount: "500",
     url: "appImages/foods/spaghetti_with_stew.png",
     description: "",
@@ -56,7 +56,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "fried spaghetti",
-    type:"food",
+    type: "food",
     amount: "500",
     url: "appImages/foods/friedspaghetti.png",
     description: "",
@@ -65,7 +65,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "jollof spaghetti",
-    type:"food",
+    type: "food",
     amount: "500",
     url: "appImages/foods/jollof_spag.png",
     description: "",
@@ -74,7 +74,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "coconut rice",
-    type:"food",
+    type: "food",
     amount: "500",
     url: "appImages/foods/coconutrice.png",
     description: "",
@@ -82,7 +82,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "salad",
-    type:"food",
+    type: "food",
     amount: "500",
     url: "appImages/foods/salad.png",
     description: "",
@@ -90,7 +90,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "amala",
-    type:"food",
+    type: "food",
     amount: "100",
     url: "appImages/foods/amala.png",
     description: "",
@@ -98,7 +98,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "eba",
-    type:"food",
+    type: "food",
     amount: "100",
     url: "appImages/foods/eba.png",
     description: "",
@@ -106,7 +106,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "fufu",
-    type:"food",
+    type: "food",
     amount: "100",
     url: "appImages/foods/fufu.png",
     description: "",
@@ -114,7 +114,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "wheat",
-    type:"food",
+    type: "food",
     amount: "150",
     url: "appImages/foods/wheat.png",
     description: "",
@@ -122,7 +122,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "starch",
-    type:"food",
+    type: "food",
     amount: "100",
     url: "appImages/foods/starch.png",
     description: "",
@@ -130,7 +130,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "afang soup",
-    type:"food",
+    type: "food",
     amount: "1000",
     url: "appImages/foods/afang.png",
     description: "",
@@ -138,7 +138,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "assorted meat peppersoup",
-    type:"food",
+    type: "food",
     amount: "1000",
     url: "appImages/foods/assorted_meat_peppersoup.png",
     description: "",
@@ -146,7 +146,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "bitter leaf",
-    type:"food",
+    type: "food",
     amount: "1000",
     url: "appImages/foods/bitter_leaf.png",
     description: "",
@@ -154,7 +154,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "cowtail peppersoup",
-    type:"food",
+    type: "food",
     amount: "1500",
     url: "appImages/foods/cowtail_peppersoup.png",
     description: "",
@@ -162,7 +162,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "egwusi soup",
-    type:"food",
+    type: "food",
     amount: "1000",
     url: "appImages/foods/egwusi_soup.png",
     description: "",
@@ -170,7 +170,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "ewedu soup",
-    type:"food",
+    type: "food",
     amount: "500",
     url: "appImages/foods/ewedu_soup.png",
     description: "",
@@ -178,7 +178,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "gbegiri soup",
-    type:"food",
+    type: "food",
     amount: "500",
     url: "appImages/foods/gbegiri_soup.png",
     description: "",
@@ -186,7 +186,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "goat meat soup",
-    type:"food",
+    type: "food",
     amount: "1500",
     url: "appImages/foods/goatmeat_peppersoup.png",
     description: "",
@@ -194,7 +194,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "oha soup",
-    type:"food",
+    type: "food",
     amount: "1000",
     url: "appImages/foods/oha_soup.png",
     description: "",
@@ -202,7 +202,7 @@ export const foodList = [
   {
     id: uuid(),
     name: "white soup",
-    type:"food",
+    type: "food",
     amount: "1500",
     url: "appImages/foods/white_soup.png",
     description: "",

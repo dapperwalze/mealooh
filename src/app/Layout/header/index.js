@@ -2,13 +2,10 @@ import React from "react";
 import { Layout, Input } from "antd";
 import { Logo } from "./../../../components/Logo/index";
 import { SearchOutlined } from '@ant-design/icons';
-
 import styles from "./header.module.scss";
 
 const { Header } = Layout;
-const { Search } = Input;
 
-const onSearch = (value) => console.log(value);
 const PageHeader = () => {
   return (
     <>
@@ -16,7 +13,6 @@ const PageHeader = () => {
           <div className={styles.headerleft}>
               <Logo />
           </div>
-
 
         <div className={styles.headerright}>
           <div className={styles.search}>
