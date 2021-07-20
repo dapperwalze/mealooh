@@ -6,6 +6,7 @@ $primaryFontColor: #000;
 $secondaryFontColor: #fff;
 $bgColor: #ec7b04;
 
+
 .content {
   width: 100%;
   height: auto;
@@ -31,6 +32,7 @@ $bgColor: #ec7b04;
   justify-content: space-evenly;
   column-gap: 25px;
   row-gap: 50px;
+  transition:30px;
 }
 .itemCard {
   border-radius: 10px;
