@@ -7,7 +7,10 @@ export const foodList = [
     type: "food",
     amount: "200",
     url: "appImages/foods/boiledbeans.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
 
   {
@@ -16,7 +19,10 @@ export const foodList = [
     type: "food",
     amount: "250",
     url: "appImages/foods/porridgebeans.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -24,7 +30,10 @@ export const foodList = [
     type: "food",
     amount: "500",
     url: "appImages/foods/whiterice_stew.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -32,7 +41,10 @@ export const foodList = [
     type: "food",
     amount: "500",
     url: "appImages/foods/friedrice.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
 
   {
@@ -41,7 +53,10 @@ export const foodList = [
     type: "food",
     amount: "500",
     url: "appImages/foods/jollof_rice.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
 
   {
@@ -50,7 +65,10 @@ export const foodList = [
     type: "food",
     amount: "500",
     url: "appImages/foods/spaghetti_with_stew.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
 
   {
@@ -59,7 +77,10 @@ export const foodList = [
     type: "food",
     amount: "500",
     url: "appImages/foods/friedspaghetti.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
 
   {
@@ -68,7 +89,10 @@ export const foodList = [
     type: "food",
     amount: "500",
     url: "appImages/foods/jollof_spag.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
 
   {
@@ -77,7 +101,10 @@ export const foodList = [
     type: "food",
     amount: "500",
     url: "appImages/foods/coconutrice.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -85,7 +112,10 @@ export const foodList = [
     type: "food",
     amount: "500",
     url: "appImages/foods/salad.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -93,7 +123,10 @@ export const foodList = [
     type: "food",
     amount: "100",
     url: "appImages/foods/amala.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -101,7 +134,10 @@ export const foodList = [
     type: "food",
     amount: "100",
     url: "appImages/foods/eba.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -109,7 +145,10 @@ export const foodList = [
     type: "food",
     amount: "100",
     url: "appImages/foods/fufu.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -117,7 +156,10 @@ export const foodList = [
     type: "food",
     amount: "150",
     url: "appImages/foods/wheat.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -125,7 +167,10 @@ export const foodList = [
     type: "food",
     amount: "100",
     url: "appImages/foods/starch.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -133,7 +178,10 @@ export const foodList = [
     type: "food",
     amount: "1000",
     url: "appImages/foods/afang.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -141,7 +189,10 @@ export const foodList = [
     type: "food",
     amount: "1000",
     url: "appImages/foods/assorted_meat_peppersoup.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -149,7 +200,10 @@ export const foodList = [
     type: "food",
     amount: "1000",
     url: "appImages/foods/bitter_leaf.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -157,7 +211,10 @@ export const foodList = [
     type: "food",
     amount: "1500",
     url: "appImages/foods/cowtail_peppersoup.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -165,7 +222,10 @@ export const foodList = [
     type: "food",
     amount: "1000",
     url: "appImages/foods/egwusi_soup.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -173,7 +233,10 @@ export const foodList = [
     type: "food",
     amount: "500",
     url: "appImages/foods/ewedu_soup.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -181,7 +244,10 @@ export const foodList = [
     type: "food",
     amount: "500",
     url: "appImages/foods/gbegiri_soup.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -189,7 +255,10 @@ export const foodList = [
     type: "food",
     amount: "1500",
     url: "appImages/foods/goatmeat_peppersoup.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -197,7 +266,10 @@ export const foodList = [
     type: "food",
     amount: "1000",
     url: "appImages/foods/oha_soup.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
   {
     id: uuid(),
@@ -205,6 +277,9 @@ export const foodList = [
     type: "food",
     amount: "1500",
     url: "appImages/foods/white_soup.png",
-    description: "",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.`,
   },
 ];

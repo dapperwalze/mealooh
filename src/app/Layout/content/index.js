@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { Layout } from "antd";
-import { DisplayItems } from "./../../../pages/DisplayItems/index";
 import { Cart } from "./../../../pages/Cart/index";
 import { OrderHistory } from "./../../../pages/OrderHistory/index";
+import ModalComponent from "../../../components/Modal/Modal";
+import Home from "../../../pages/Home/index";
 import styles from "./content.module.scss";
-import { ModalComponent } from "../../../components/Modal/Modal";
 
 const { Content } = Layout;
 
 const PageContent = () => {
-
-
   const [isModalVisible, setIsModalVisible] = useState(false);
   let location = useLocation();
   let background = location.state && location.state.background;
@@ -20,7 +18,7 @@ const PageContent = () => {
     <Content className={styles.content}>
       <Switch location={background || location}>
         <Route exact path="/">
-          <DisplayItems setIsModalVisible={setIsModalVisible} />
+          <Home setIsModalVisible={setIsModalVisible} />
         </Route>
         <Route path="/cart">
           <Cart />
@@ -31,10 +29,10 @@ const PageContent = () => {
       </Switch>
       {background && (
         <Route path="/meals/item-details/:id">
-            <ModalComponent
-                isModalVisible={isModalVisible}
-                setIsModalVisible={setIsModalVisible}
-            />
+          <ModalComponent
+            isModalVisible={isModalVisible}
+            setIsModalVisible={setIsModalVisible}
+          />
         </Route>
       )}
     </Content>

@@ -1,19 +1,10 @@
-import { useState } from "react";
 import styles from "./itemCountToggler.module.scss";
 
-export const ItemCountToggler = (props) => {
-  const [itemCount, setItemCount] = useState(1);
-
-  const decrementCount = () => {
-    setItemCount((prevValue) =>
-      prevValue > 1 ? prevValue - 1 : (prevValue = 1)
-    );
-  };
-
-  const incrementCount = () => {
-    setItemCount((prevValue) => prevValue + 1);
-  };
-
+export const ItemCountToggler = ({
+  itemCount,
+  decrementCount,
+  incrementCount,
+}) => {
   return (
     <div className={styles.selectedProductCountContainer}>
       <button
