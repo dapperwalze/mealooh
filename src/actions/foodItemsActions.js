@@ -22,7 +22,6 @@ export const fetchFoodItems = () => {
 
     try {
       const response = allFoodItems;
-      //const data = response.json()
 
       dispatch(getFoodItemsSuccess(response));
     } catch (error) {

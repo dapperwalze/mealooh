@@ -7,7 +7,7 @@ import { Card } from "../../components/Card/index";
 import { foodList } from "../../mealData/foodList";
 import styles from "./home.module.scss";
 
-const Home = ({ setIsModalVisible }) => {
+export const Home = ({ setIsModalVisible }) => {
   let location = useLocation();
   const dispatch = useDispatch();
   const { isLoading, foodItems, hasErrors } = useSelector(foodItemsSelector);
@@ -69,5 +69,3 @@ const Home = ({ setIsModalVisible }) => {
     </>
   );
 };
-
-export default Home;

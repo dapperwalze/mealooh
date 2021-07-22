@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { Layout } from "antd";
+import { Home } from "../../../pages/Home/index";
 import { Cart } from "./../../../pages/Cart/index";
 import { OrderHistory } from "./../../../pages/OrderHistory/index";
 import ModalComponent from "../../../components/Modal/Modal";
-import Home from "../../../pages/Home/index";
 import styles from "./content.module.scss";
 
 const { Content } = Layout;

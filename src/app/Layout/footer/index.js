@@ -13,6 +13,7 @@ const PageFooter = () => {
         <section className={styles.footerItem}>
           <Logo />
         </section>
+
         <section className={styles.footerItem}>
           <nav className={styles.footerNav}>
             <NavLink
@@ -25,16 +26,7 @@ const PageFooter = () => {
             >
               Home
             </NavLink>
-            <NavLink
-              className={styles.footerLink}
-              to="/order-history"
-              exact
-              activeStyle={{
-                color: "#25f525",
-              }}
-            >
-              Order History
-            </NavLink>
+
             <NavLink
               className={styles.footerLink}
               to="/cart"
@@ -45,6 +37,17 @@ const PageFooter = () => {
             >
               Cart
             </NavLink>
+
+            <NavLink
+              className={styles.footerLink}
+              to="/order-history"
+              exact
+              activeStyle={{
+                color: "#25f525",
+              }}
+            >
+              Order History
+            </NavLink>
           </nav>
         </section>
 
@@ -53,6 +56,7 @@ const PageFooter = () => {
             <span>Be in the know.</span> Get access to amazing offers and
             discounts.
           </h5>
+
           <form>
             <Input
               className={styles.inputEmail}

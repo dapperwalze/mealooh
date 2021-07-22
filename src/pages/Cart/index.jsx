@@ -1,9 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { cartSelector } from "./../../reducers/cartActionsReducer";
 import { Link } from "react-router-dom";
 import { Alert } from "antd";
 import styles from "./cart.module.scss";
-import { cartSelector } from "./../../reducers/cartActionsReducer";
 
 export const Cart = () => {
   const { cart } = useSelector(cartSelector);
