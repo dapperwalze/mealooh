@@ -65,7 +65,6 @@ const Home = ({ setIsModalVisible }) => {
       <section className={styles.contentSection}>
         <h2 className={styles.sectionHeader}>All</h2>
         <div className={styles.foodItemsContainer}>{renderAllFoodItems()}</div>
-        <img alt="ddd" src="./logo.svg"></img>
       </section>
     </>
   );
