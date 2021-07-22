@@ -1,19 +1,16 @@
 import React, { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
-import { connect } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { fetchFoodItems } from "./../../actions/foodItemsActions";
+import { foodItemsSelector } from "../../reducers/foodItemsReducer";
 import { Card } from "../../components/Card/index";
 import { foodList } from "../../mealData/foodList";
-import styles from "./displayItems.module.scss";
+import styles from "./home.module.scss";
 
-const Home = ({
-  setIsModalVisible,
-  dispatch,
-  isLoading,
-  foodItems,
-  hasErrors,
-}) => {
+const Home = ({ setIsModalVisible }) => {
   let location = useLocation();
+  const dispatch = useDispatch();
+  const { isLoading, foodItems, hasErrors } = useSelector(foodItemsSelector);
 
   useEffect(() => {
     dispatch(fetchFoodItems());
@@ -68,15 +65,10 @@ const Home = ({
       <section className={styles.contentSection}>
         <h2 className={styles.sectionHeader}>All</h2>
         <div className={styles.foodItemsContainer}>{renderAllFoodItems()}</div>
+        <img alt="ddd" src="./logo.svg"></img>
       </section>
     </>
   );
 };
 
-const mapStateToProps = (state) => ({
-  isLoading: state.foodItems.isLoading,
-  foodItems: state.foodItems.foodItems,
-  hasErrors: state.foodItems.hasErrors,
-});
-
-export default connect(mapStateToProps)(Home);
+export default Home;

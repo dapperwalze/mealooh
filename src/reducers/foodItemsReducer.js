@@ -1,6 +1,6 @@
 import * as actions from "../actions/foodItemsActions";
 
-export const initialState = {
+const initialState = {
   foodItems: [],
   isLoading: false,
   hasErrors: false,
@@ -18,4 +18,6 @@ const foodItemsReducer = (state = initialState, action) => {
       return state;
   }
 };
+
+export const foodItemsSelector = (state) => state.foodItems;
 export default foodItemsReducer;

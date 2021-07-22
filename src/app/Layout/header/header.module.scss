@@ -5,7 +5,6 @@ $fontWeight: 500;
 $primaryFontColor: #000;
 $secondaryFontColor: #25f525;
 
-
 .header {
   width: 100% !important;
   margin: auto;
@@ -16,7 +15,7 @@ $secondaryFontColor: #25f525;
   background: white !important;
   border-bottom: 2px solid #eee;
   font-family: $fontFamily;
-  padding: 60px 80px  !important;
+  padding: 60px 80px !important;
 }
 
 .headerFeatures {
@@ -24,10 +23,8 @@ $secondaryFontColor: #25f525;
   flex-wrap: wrap;
   column-gap: 50px;
   align-items: center !important;
- 
- 
 }
-.navLinkGroup{
+.navLinkGroup {
   display: flex;
   gap: 30px;
 }
@@ -43,4 +40,6 @@ $secondaryFontColor: #25f525;
   }
 }
 
-
+.badge {
+  margin-left: 3px;
+}

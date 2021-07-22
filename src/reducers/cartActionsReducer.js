@@ -26,5 +26,5 @@ const cartActionsReducer = (state = initialState, action) => {
       return state;
   }
 };
-
+export const cartSelector = (state) => state.cart;
 export default cartActionsReducer;

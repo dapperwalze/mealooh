@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { useHistory, useParams } from "react-router-dom";
-import { connect } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Modal } from "antd";
 import { ItemCountToggler } from "./../ItemCountToggler/index";
 import { ItemName } from "./../ItemName/index";
@@ -9,13 +9,9 @@ import { addToCart } from "./../../actions/cartActions";
 import allFoodItems from "../../mealData/index";
 import styles from "./modal.module.scss";
 
-const ModalComponent = ({
-  dispatch,
-  cart,
-  isModalVisible,
-  setIsModalVisible,
-}) => {
+const ModalComponent = ({ isModalVisible, setIsModalVisible }) => {
   const [itemCount, setItemCount] = useState(1);
+  const dispatch = useDispatch();
   let history = useHistory();
   let { id } = useParams();
   let selectedItem = allFoodItems.find((item) => item.id === id);
@@ -109,8 +105,4 @@ const ModalComponent = ({
   );
 };
 
-const mapStateToProps = (state) => ({
-  cart: state.cart.cart,
-});
-
-export default connect(mapStateToProps)(ModalComponent);
+export default ModalComponent;

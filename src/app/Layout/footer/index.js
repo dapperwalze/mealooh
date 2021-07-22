@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Layout, Button, Input } from "antd";
 import { Logo } from "./../../../components/Logo/index";
 import styles from "./footer.module.scss";
@@ -15,15 +15,36 @@ const PageFooter = () => {
         </section>
         <section className={styles.footerItem}>
           <nav className={styles.footerNav}>
-            <Link className={styles.footerLink} to="/">
+            <NavLink
+              className={styles.footerLink}
+              to="/"
+              exact
+              activeStyle={{
+                color: "#25f525",
+              }}
+            >
               Home
-            </Link>
-            <Link className={styles.footerLink} to="/order-history">
+            </NavLink>
+            <NavLink
+              className={styles.footerLink}
+              to="/order-history"
+              exact
+              activeStyle={{
+                color: "#25f525",
+              }}
+            >
               Order History
-            </Link>
-            <Link className={styles.footerLink} to="/cart">
+            </NavLink>
+            <NavLink
+              className={styles.footerLink}
+              to="/cart"
+              exact
+              activeStyle={{
+                color: "#25f525",
+              }}
+            >
               Cart
-            </Link>
+            </NavLink>
           </nav>
         </section>
 
