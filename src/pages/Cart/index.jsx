@@ -21,10 +21,5 @@ export const Cart = () => {
         </p>
       </>
     ) : null;
-  return (
-    <section className={styles.cartSection}>
-      <h1 className={styles.cartHeader}>My Cart</h1>
-      {showAlert}
-    </section>
-  );
+  return <section className={styles.cartSection}>{showAlert}</section>;
 };

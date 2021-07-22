@@ -23,10 +23,5 @@ export const OrderHistory = () => {
       </>
     ) : null;
 
-  return (
-    <section className={styles.orderHistorySection}>
-      <h1 className={styles.orderHistoryHeader}>My Orders</h1>
-      {showAlert}
-    </section>
-  );
+  return <section className={styles.orderHistorySection}>{showAlert}</section>;
 };
