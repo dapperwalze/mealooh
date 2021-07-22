@@ -13,7 +13,8 @@ export const Cart = () => {
         <Alert
           className={styles.alertPanel}
           message=" Cart is currently empty"
-          type="warning"
+          type="info"
+          showIcon
         />
         <p className={styles.redirectStatement}>
           Select an item <Link to="/">here</Link>

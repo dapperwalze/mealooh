@@ -14,7 +14,8 @@ export const OrderHistory = () => {
         <Alert
           className={styles.alertPanel}
           message=" You've placed no orders yet"
-          type="warning"
+          type="info"
+          showIcon
         />
         <p className={styles.redirectStatement}>
           Select an item <Link to="/">here</Link>, then place an order
