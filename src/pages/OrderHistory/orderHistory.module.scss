@@ -1,5 +1,15 @@
+$fontFamily: "Quicksand", sans-serif;
+$lineHeight: 25px;
+$fontWeight: 500;
+$primaryFontColor: #000;
+
 .orderHistorySection {
   width: 100%;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  color: $primaryFontColor;
+  line-height: $lineHeight;
+  margin-top: 10px;
 }
 
 .alertPanel {
@@ -10,4 +20,56 @@
   width: 50%;
   margin: auto;
   padding: 5px 15px;
+}
+.displayOrderCards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 50px;
+}
+
+@media only screen and (max-width: 1067px) {
+  .displayOrderCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .orderHistorySection {
+    margin-top: 0px;
+  }
+  .displayOrderCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .orderHistorySection {
+    margin-top: 0px;
+  }
+  .displayOrderCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .orderHistorySection {
+    margin-top: 10px;
+  }
+  .displayOrderCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 30px;
+  }
 }

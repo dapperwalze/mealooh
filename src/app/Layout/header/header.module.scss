@@ -41,5 +41,104 @@ $secondaryFontColor: #25f525;
 }
 
 .badge {
+  font-family: $fontFamily;
+  font-weight: 600;
+  line-height: $lineHeight;
   margin-left: 3px;
+}
+
+@media only screen and (max-width: 1067px) {
+  .header {
+    width: 100% !important;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-content: center !important;
+    background: white !important;
+    border-bottom: 2px solid #eee;
+    font-family: $fontFamily;
+    padding: 30px 20px !important;
+  }
+  .headerFeatures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    align-items: center !important;
+  }
+
+  .navLinkGroup {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    width: 100% !important;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-content: center !important;
+    background: white !important;
+    border-bottom: 2px solid #eee;
+    font-family: $fontFamily;
+    padding: 30px 20px !important;
+  }
+  .headerFeatures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    column-gap: 50px;
+    align-items: center !important;
+  }
+
+  .navLinkGroup {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .header {
+    width: 100% !important;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-content: center !important;
+    background: white !important;
+    border-bottom: 2px solid #eee;
+    font-family: $fontFamily;
+    padding: 30px 20px !important;
+  }
+  .navLinkGroup {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .header {
+    width: 100% !important;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-content: center !important;
+    background: white !important;
+    border-bottom: 2px solid #eee;
+    font-family: $fontFamily;
+    padding: 30px 20px !important;
+  }
+  .navLinkGroup {
+    display: flex;
+    margin-top: 20px;
+  }
 }

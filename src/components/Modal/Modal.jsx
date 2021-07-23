@@ -10,21 +10,21 @@ import allFoodItems from "../../mealData/index";
 import styles from "./modal.module.scss";
 
 const ModalComponent = ({ isModalVisible, setIsModalVisible }) => {
-  const [itemCount, setItemCount] = useState(1);
   const dispatch = useDispatch();
   let history = useHistory();
   let { id } = useParams();
   let selectedItem = allFoodItems.find((item) => item.id === id);
+  const [itemCount, setItemCount] = useState(1);
 
-  const decrementCount = () => {
-    setItemCount((prevValue) =>
-      prevValue > 1 ? prevValue - 1 : (prevValue = 1)
+  const decrementCount = useCallback(() => {
+    setItemCount((itemCount) =>
+      itemCount > 1 ? itemCount - 1 : (itemCount = 1)
     );
-  };
+  }, []);
 
-  const incrementCount = () => {
-    setItemCount((prevValue) => prevValue + 1);
-  };
+  const incrementCount = useCallback(() => {
+    setItemCount((itemCount) => itemCount + 1);
+  }, []);
 
   const handleCancel = useCallback(
     (e) => {
@@ -34,6 +34,7 @@ const ModalComponent = ({ isModalVisible, setIsModalVisible }) => {
     },
     [history, setIsModalVisible]
   );
+
   const handleAddToCart = useCallback(
     (e) => {
       dispatch(

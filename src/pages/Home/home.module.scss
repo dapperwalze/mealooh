@@ -25,3 +25,37 @@ $bgColor: #ec7b04;
   column-gap: 25px;
   row-gap: 50px;
 }
+@media only screen and (max-width: 1067px) {
+  .foodItemsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    row-gap: 50px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+  .foodItemsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 50px;
+  }
+}
+@media only screen and (max-width: 399px) {
+  .contentSection {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .foodItemsContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    column-gap: 0px;
+    row-gap: 30px;
+  }
+}

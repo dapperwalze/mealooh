@@ -1,8 +1,8 @@
+import React from "react";
 import styles from "./itemPrice.module.scss";
 
-
 export const ItemPrice = ({ price, type }) => {
-  const currencyFormatter = new Intl.NumberFormat("ng-NG", {
+  const formattedAmount = new Intl.NumberFormat("ng-NG", {
     style: "currency",
     currency: "NGN",
   }).format(price);
@@ -10,7 +10,7 @@ export const ItemPrice = ({ price, type }) => {
   return (
     <>
       <span className={styles.selectedItemPrice}>
-        {currencyFormatter}
+        {formattedAmount}
         {type}
       </span>
     </>

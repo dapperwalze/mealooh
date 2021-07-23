@@ -39,7 +39,12 @@ const PageHeader = () => {
               className={styles.headerNavLink}
             >
               Cart
-              <Badge className={styles.badge} count={cart.length} showZero />
+              <Badge
+                className={styles.badge}
+                count={cart.length}
+                style={{ fontWeight: 700 }}
+                showZero
+              />
             </NavLink>
 
             <NavLink

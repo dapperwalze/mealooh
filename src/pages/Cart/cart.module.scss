@@ -1,5 +1,14 @@
+$fontFamily: "Quicksand", sans-serif;
+$lineHeight: 25px;
+$fontWeight: 500;
+$primaryFontColor: #000;
+
 .cartSection {
   width: 100%;
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  color: $primaryFontColor;
+  line-height: $lineHeight important;
 }
 
 .cartHeader {

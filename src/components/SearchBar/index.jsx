@@ -1,20 +1,19 @@
+import React from "react";
 import SearchIcon from "./search-icon.png";
 import styles from "./searchBar.module.scss";
 
 export const SearchBar = () => {
-   const handleChange = (e) => {
+  const handleChange = (e) => {
     //const keyword = e.target.value;
-
     //setSearchValue(keyword);
   };
 
-  
   return (
     <div className={styles.searchBox}>
       <form className={styles.form}>
         <input
           type="search"
-          className={ styles.searchField }
+          className={styles.searchField}
           placeholder="Find food and drinks"
           onChange={(e) => handleChange(e)}
           //value={searchValue}
@@ -25,5 +24,3 @@ export const SearchBar = () => {
     </div>
   );
 };
-
-

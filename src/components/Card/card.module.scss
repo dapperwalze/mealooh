@@ -50,3 +50,17 @@ $bgColor: #ec7b04;
   align-items: center;
   text-transform: capitalize;
 }
+@media only screen and (max-width: 399px) {
+  .itemCard {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    &:hover {
+      .itemDetails {
+        background-color: #008000;
+      }
+    }
+  }
+}
