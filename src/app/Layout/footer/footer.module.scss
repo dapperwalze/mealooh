@@ -53,28 +53,31 @@ $secondaryFontColor: #25f525;
   padding: 10px;
   margin: 10px 0px;
   font-family: $fontFamily;
-  font-size: $fontSize;
   font-weight: $fontWeight;
   line-height: $lineHeight;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  border-radius: 5px;
 }
 .subscribeButton {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $primaryFontColor;
   font-family: $fontFamily;
   font-size: $fontSize;
   font-weight: $fontWeight;
   line-height: $lineHeight;
   color: #fff;
   padding: 10px;
-  border-radius: 0px;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
-  &:hover {
-    color: $secondaryFontColor;
-  }
+  //background-color: $primaryFontColor;
+  // &:hover {
+  //   color: $secondaryFontColor;
+  // }
 }
 
 @media only screen and (max-width: 1067px) {

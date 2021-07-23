@@ -45,7 +45,6 @@ const ModalComponent = ({ isModalVisible, setIsModalVisible }) => {
           itemCount
         )
       );
-      e.stopPropagation();
       setIsModalVisible(false);
       history.goBack();
     },
@@ -92,7 +91,7 @@ const ModalComponent = ({ isModalVisible, setIsModalVisible }) => {
 
         <div className={styles.selectedItemPriceAndQty}>
           <ItemPrice
-            price={selectedItem.amount}
+            amount={selectedItem.amount}
             type={selectedItem.type === "food" ? " per portion" : ""}
           />
           <ItemCountToggler

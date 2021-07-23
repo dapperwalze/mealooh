@@ -1,6 +1,6 @@
 import * as actions from "../actions/cartActions";
 
-const initialState = {
+export const initialState = {
   cart: [],
 };
 

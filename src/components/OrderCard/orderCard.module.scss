@@ -8,8 +8,8 @@ $bgColor: #ec7b04;
 
 .orderCard {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  // justify-content: space-between;
   background-color: #fff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
   border-radius: 2px;
@@ -39,16 +39,9 @@ $bgColor: #ec7b04;
   line-height: $lineHeight;
   padding: 5px 10px;
 }
-.orderDescription {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  font-weight: $fontWeight;
-  line-height: $lineHeight;
-  padding: 5px 10px;
-}
+.orderDescription,
 .orderAmount {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   font-family: $fontFamily;
@@ -57,6 +50,16 @@ $bgColor: #ec7b04;
   line-height: $lineHeight;
   padding: 5px 10px;
 }
+.orderDescription {
+  text-transform: capitalize;
+}
+.btnGroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #eee;
+}
+
 .button {
   display: flex;
   flex-wrap: wrap;

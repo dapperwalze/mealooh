@@ -1,14 +1,17 @@
 $fontFamily: "Quicksand", sans-serif;
-$lineHeight: 25px;
+$fontSize: 0.9375rem;
 $fontWeight: 500;
+$lineHeight: 25px;
 $primaryFontColor: #000;
+$secondaryFontColor: #fff;
+$bgColor: #ec7b04;
 
 .cartSection {
   width: 100%;
   font-family: $fontFamily;
   font-weight: $fontWeight;
   color: $primaryFontColor;
-  line-height: $lineHeight important;
+  line-height: $lineHeight !important;
 }
 
 .cartHeader {
@@ -22,4 +25,133 @@ $primaryFontColor: #000;
   width: 50%;
   margin: auto;
   padding: 5px 15px;
+}
+.cartDetails {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+.cartOptions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+.cartItem {
+  width: 100%;
+  padding: 15px;
+  border-bottom: 2px solid #eee;
+}
+.itemName {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: $fontFamily;
+  font-size: 1.1rem;
+  font-weight: $fontWeight;
+  color: $primaryFontColor;
+  line-height: $lineHeight !important;
+  text-transform: capitalize;
+}
+.itemAmount,
+.itemQuantity,
+.removeItem {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $primaryFontColor;
+  line-height: $lineHeight !important;
+}
+.removeItem {
+  justify-content: flex-end;
+}
+.dangerButton,
+.addMoreToButton {
+  font-family: $fontFamily;
+  font-size: 0.9375rem;
+  font-weight: $fontWeight;
+}
+
+.displayTotalAmount {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
+  font-family: $fontFamily;
+  font-size: 1.1rem;
+  font-weight: $fontWeight;
+  color: $primaryFontColor;
+  line-height: $lineHeight !important;
+}
+.subSection {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px dashed #eee;
+}
+
+.displayPanel {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 7px 15px 0px 0px;
+}
+.label {
+  font-size: 1rem;
+}
+.subTotal,
+.discount,
+.deliveryCharge,
+.total {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $primaryFontColor;
+  line-height: $lineHeight !important;
+}
+.deliveryCharge {
+  color: #008000 !important;
+}
+.placeOrder {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  margin-top: 35px;
+  border-radius: 5px;
+}
+.successAlert {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media only screen and (max-width: 1067px) {
+  .cartDetails {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+  .cartDetails {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .cartDetails {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
 }
