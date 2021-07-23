@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchFoodItems } from "./../../actions/foodItemsActions";
@@ -16,29 +16,25 @@ export const Home = ({ setIsModalVisible }) => {
     dispatch(fetchFoodItems());
   }, [dispatch]);
 
-  const popularFoodItems = useMemo(
-    () =>
-      foodList.map((item) => (
-        <Link
-          key={item.id}
-          to={{
-            pathname: `/meals/item-details/${item.id}`,
-            state: { background: location },
-          }}
-        >
-          <Card
-            alt={item.name}
-            url={item.url}
-            name={item.name}
-            amount={item.amount}
-            setIsModalVisible={setIsModalVisible}
-          />
-        </Link>
-      )),
-    [location, setIsModalVisible]
-  );
+  const popularFoodItems = foodList.map((item) => (
+    <Link
+      key={item.id}
+      to={{
+        pathname: `/meals/item-details/${item.id}`,
+        state: { background: location },
+      }}
+    >
+      <Card
+        alt={item.name}
+        url={item.url}
+        name={item.name}
+        amount={item.amount}
+        setIsModalVisible={setIsModalVisible}
+      />
+    </Link>
+  ));
 
-  const renderAllFoodItems = useMemo(() => {
+  const renderAllFoodItems = () => {
     if (isLoading) return <p>Loading meals...</p>;
     if (hasErrors) return <p>Unable to display meals.</p>;
     return foodItems.map((item) => (
@@ -58,8 +54,7 @@ export const Home = ({ setIsModalVisible }) => {
         />
       </Link>
     ));
-  }, [foodItems, isLoading, hasErrors, setIsModalVisible, location]);
-
+  };
   return (
     <>
       <section className={styles.contentSection}>
@@ -69,7 +64,7 @@ export const Home = ({ setIsModalVisible }) => {
 
       <section className={styles.contentSection}>
         <h2 className={styles.sectionHeader}>All</h2>
-        <div className={styles.foodItemsContainer}>{renderAllFoodItems}</div>
+        <div className={styles.foodItemsContainer}>{renderAllFoodItems()}</div>
       </section>
     </>
   );
