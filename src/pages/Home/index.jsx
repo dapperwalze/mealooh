@@ -34,27 +34,26 @@ export const Home = ({ setIsModalVisible }) => {
     </Link>
   ));
 
-  const renderAllFoodItems = () => {
-    if (isLoading) return <p>Loading meals...</p>;
-    if (hasErrors) return <p>Unable to display meals.</p>;
-    return foodItems.map((item) => (
-      <Link
-        key={item.id}
-        to={{
-          pathname: `/meals/item-details/${item.id}`,
-          state: { background: location },
-        }}
-      >
-        <Card
-          alt={item.name}
-          url={item.url}
-          name={item.name}
-          amount={item.amount}
-          setIsModalVisible={setIsModalVisible}
-        />
-      </Link>
-    ));
-  };
+  const renderAllFoodItems = foodItems.map((item) => (
+    <Link
+      key={item.id}
+      to={{
+        pathname: `/meals/item-details/${item.id}`,
+        state: { background: location },
+      }}
+    >
+      <Card
+        alt={item.name}
+        url={item.url}
+        name={item.name}
+        amount={item.amount}
+        setIsModalVisible={setIsModalVisible}
+      />
+    </Link>
+  ));
+
+  if (isLoading) return <p>Loading meals...</p>;
+  if (hasErrors) return <p>Unable to display meals.</p>;
   return (
     <>
       <section className={styles.contentSection}>
@@ -64,7 +63,7 @@ export const Home = ({ setIsModalVisible }) => {
 
       <section className={styles.contentSection}>
         <h2 className={styles.sectionHeader}>All</h2>
-        <div className={styles.foodItemsContainer}>{renderAllFoodItems()}</div>
+        <div className={styles.foodItemsContainer}>{renderAllFoodItems}</div>
       </section>
     </>
   );

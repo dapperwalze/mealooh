@@ -6,7 +6,7 @@ export const meatList = [
     name: "pork",
     type: "meat",
     amount: "300",
-    url: "./appImages/meats/fried_porkmeat.png",
+    url: "appImages/meats/fried_porkmeat.png",
     description: " ",
   },
 
@@ -15,7 +15,7 @@ export const meatList = [
     name: "fried chicken",
     type: "meat",
     amount: "1000",
-    url: "./appImages/meats/fried_chicken.png",
+    url: "appImages/meats/fried_chicken.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -27,7 +27,7 @@ export const meatList = [
     name: "beef",
     type: "meat",
     amount: "300",
-    url: "./appImages/meats/fried_meat.png",
+    url: "appImages/meats/fried_meat.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -51,7 +51,7 @@ export const meatList = [
     name: "fried liver",
     type: "meat",
     amount: "300",
-    url: "./appImages/meats/fried_cow_liver.png",
+    url: "appImages/meats/fried_cow_liver.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -62,7 +62,7 @@ export const meatList = [
     name: "kpomo",
     type: "meat",
     amount: "150",
-    url: "./appImages/meats/kpomo.png",
+    url: "appImages/meats/kpomo.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -74,7 +74,7 @@ export const meatList = [
     name: "gizzard",
     type: "meat",
     amount: "200",
-    url: "./appImages/meats/gizzard.png",
+    url: "appImages/meats/gizzard.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -86,7 +86,7 @@ export const meatList = [
     name: "fried fish",
     type: "meat",
     amount: "300",
-    url: "./appImages/meats/fried_fish.png",
+    url: "appImages/meats/fried_fish.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -97,7 +97,7 @@ export const meatList = [
     name: "cooked fish",
     type: "meat",
     amount: "300",
-    url: "./appImages/meats/cooked_fish.png",
+    url: "appImages/meats/cooked_fish.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -109,7 +109,7 @@ export const meatList = [
     name: "turkey",
     type: "meat",
     amount: "1000",
-    url: "./appImages/meats/fried_turkeymeat.png",
+    url: "appImages/meats/fried_turkeymeat.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -120,7 +120,7 @@ export const meatList = [
     name: "scrambled eggs",
     type: "meat",
     amount: "300",
-    url: "./appImages/meats/scrambledeggs.png",
+    url: "appImages/meats/scrambledeggs.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -131,7 +131,7 @@ export const meatList = [
     name: "boiled egg",
     type: "meat",
     amount: "100",
-    url: "./appImages/meats/boiledegg.png",
+    url: "appImages/meats/boiledegg.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

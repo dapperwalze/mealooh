@@ -6,7 +6,7 @@ export const foodList = [
     name: "boiled beans",
     type: "food",
     amount: "200",
-    url: "./appImages/foods/boiledbeans.png",
+    url: "appImages/foods/boiledbeans.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -18,7 +18,7 @@ export const foodList = [
     name: "porridge beans",
     type: "food",
     amount: "250",
-    url: "./appImages/foods/porridgebeans.png",
+    url: "appImages/foods/porridgebeans.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -29,7 +29,7 @@ export const foodList = [
     name: "white rice with stew",
     type: "food",
     amount: "500",
-    url: "./appImages/foods/whiterice_stew.png",
+    url: "appImages/foods/whiterice_stew.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -40,7 +40,7 @@ export const foodList = [
     name: "fried rice",
     type: "food",
     amount: "500",
-    url: "./appImages/foods/friedrice.png",
+    url: "appImages/foods/friedrice.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -52,7 +52,7 @@ export const foodList = [
     name: "jollof rice",
     type: "food",
     amount: "500",
-    url: "./appImages/foods/jollof_rice.png",
+    url: "appImages/foods/jollof_rice.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -64,7 +64,7 @@ export const foodList = [
     name: "spaghetti with stew",
     type: "food",
     amount: "500",
-    url: "./appImages/foods/spaghetti_with_stew.png",
+    url: "appImages/foods/spaghetti_with_stew.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -76,7 +76,7 @@ export const foodList = [
     name: "fried spaghetti",
     type: "food",
     amount: "500",
-    url: "./appImages/foods/friedspaghetti.png",
+    url: "appImages/foods/friedspaghetti.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -88,7 +88,7 @@ export const foodList = [
     name: "jollof spaghetti",
     type: "food",
     amount: "500",
-    url: "./appImages/foods/jollof_spag.png",
+    url: "appImages/foods/jollof_spag.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -100,7 +100,7 @@ export const foodList = [
     name: "coconut rice",
     type: "food",
     amount: "500",
-    url: "./appImages/foods/coconutrice.png",
+    url: "appImages/foods/coconutrice.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -111,7 +111,7 @@ export const foodList = [
     name: "salad",
     type: "food",
     amount: "500",
-    url: "./appImages/foods/salad.png",
+    url: "appImages/foods/salad.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -122,7 +122,7 @@ export const foodList = [
     name: "amala",
     type: "food",
     amount: "100",
-    url: "./appImages/foods/amala.png",
+    url: "appImages/foods/amala.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -133,7 +133,7 @@ export const foodList = [
     name: "eba",
     type: "food",
     amount: "100",
-    url: "./appImages/foods/eba.png",
+    url: "appImages/foods/eba.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -144,7 +144,7 @@ export const foodList = [
     name: "fufu",
     type: "food",
     amount: "100",
-    url: "./appImages/foods/fufu.png",
+    url: "appImages/foods/fufu.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -155,7 +155,7 @@ export const foodList = [
     name: "wheat",
     type: "food",
     amount: "150",
-    url: "./appImages/foods/wheat.png",
+    url: "appImages/foods/wheat.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -166,7 +166,7 @@ export const foodList = [
     name: "starch",
     type: "food",
     amount: "100",
-    url: "./appImages/foods/starch.png",
+    url: "appImages/foods/starch.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -177,7 +177,7 @@ export const foodList = [
     name: "afang soup",
     type: "food",
     amount: "1000",
-    url: "./appImages/foods/afang.png",
+    url: "appImages/foods/afang.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -188,7 +188,7 @@ export const foodList = [
     name: "assorted meat peppersoup",
     type: "food",
     amount: "1000",
-    url: "./appImages/foods/assorted_meat_peppersoup.png",
+    url: "appImages/foods/assorted_meat_peppersoup.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -199,7 +199,7 @@ export const foodList = [
     name: "bitter leaf",
     type: "food",
     amount: "1000",
-    url: "./appImages/foods/bitter_leaf.png",
+    url: "appImages/foods/bitter_leaf.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -210,7 +210,7 @@ export const foodList = [
     name: "cowtail peppersoup",
     type: "food",
     amount: "1500",
-    url: "./appImages/foods/cowtail_peppersoup.png",
+    url: "appImages/foods/cowtail_peppersoup.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -221,7 +221,7 @@ export const foodList = [
     name: "egwusi soup",
     type: "food",
     amount: "1000",
-    url: "./appImages/foods/egwusi_soup.png",
+    url: "appImages/foods/egwusi_soup.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -232,7 +232,7 @@ export const foodList = [
     name: "ewedu soup",
     type: "food",
     amount: "500",
-    url: "./appImages/foods/ewedu_soup.png",
+    url: "appImages/foods/ewedu_soup.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -243,7 +243,7 @@ export const foodList = [
     name: "gbegiri soup",
     type: "food",
     amount: "500",
-    url: "./appImages/foods/gbegiri_soup.png",
+    url: "appImages/foods/gbegiri_soup.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -254,7 +254,7 @@ export const foodList = [
     name: "goat meat soup",
     type: "food",
     amount: "1500",
-    url: "./appImages/foods/goatmeat_peppersoup.png",
+    url: "appImages/foods/goatmeat_peppersoup.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -265,7 +265,7 @@ export const foodList = [
     name: "oha soup",
     type: "food",
     amount: "1000",
-    url: "./appImages/foods/oha_soup.png",
+    url: "appImages/foods/oha_soup.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -276,7 +276,7 @@ export const foodList = [
     name: "white soup",
     type: "food",
     amount: "1500",
-    url: "./appImages/foods/white_soup.png",
+    url: "appImages/foods/white_soup.png",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
