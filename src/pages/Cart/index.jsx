@@ -32,17 +32,18 @@ export const Cart = () => {
   const showAlertComponent =
     showSuccessAlert === true ? (
       <Alert
-        message="Success"
-        description="Order placed successfully!"
+        message="Success!"
+        description="Order placed successfully."
         type="success"
         closable
         onClose={() => setShowSuccessAlert(!showSuccessAlert)}
         className={styles.successAlert}
+        showIcon
       />
     ) : null;
 
   const handlePlaceOrder = useCallback(
-    (description, amount, fn) => {
+    (description, amount) => {
       dispatch(placeOrder(description, amount));
       setShowSuccessAlert(true);
     },
@@ -64,6 +65,7 @@ export const Cart = () => {
       </>
     ) : (
       <section className={styles.cartDetails}>
+        {showAlertComponent}
         <div className={styles.cartOptions}>
           <Link to="/">
             <Button className={styles.addMoreToButton} type="link">
@@ -84,11 +86,11 @@ export const Cart = () => {
         {cart.map((item) => (
           <section key={item.id} className={styles.cartItem}>
             <span className={styles.itemName}>{item.name} </span>
-            <span className={styles.itemQuantity}>qty: {item.quantity}</span>
             <span className={styles.itemAmount}>
               {currencyFormatter(item.amount)}
               {item.type === "food" ? " per portion" : ""}
             </span>
+            <span className={styles.itemQuantity}>qty: {item.quantity}</span>
             <span className={styles.removeItem}>
               <Button
                 onClick={() => handleRemoveItem(item.id)}
@@ -144,7 +146,6 @@ export const Cart = () => {
             Place Order
           </Button>
         </section>
-        {showAlertComponent}
       </section>
     );
 

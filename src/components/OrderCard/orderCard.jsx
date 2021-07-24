@@ -14,8 +14,8 @@ export const OrderCard = ({ orderId, orderDate, description, amount }) => {
   const formattedAmount = currencyFormatter(amount);
 
   const handleRemoveItem = useCallback(
-    (orderId) => {
-      dispatch(deletefromHistory(orderId));
+    (itemId) => {
+      dispatch(deletefromHistory(itemId));
     },
     [dispatch]
   );
@@ -33,7 +33,7 @@ export const OrderCard = ({ orderId, orderDate, description, amount }) => {
 
       <div className={styles.btnGroup}>
         <Button
-          onClick={handleRemoveItem}
+          onClick={() => handleRemoveItem(orderId)}
           className={styles.dangerButton}
           type="text"
           danger
@@ -41,7 +41,7 @@ export const OrderCard = ({ orderId, orderDate, description, amount }) => {
           Delete from history
         </Button>
         <Button
-          onClick={handleAddToCart}
+          onClick={() => handleAddToCart(description, amount)}
           type="link"
           className={styles.addToCartButton}
         >

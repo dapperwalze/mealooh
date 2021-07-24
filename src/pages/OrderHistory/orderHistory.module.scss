@@ -9,7 +9,6 @@ $primaryFontColor: #000;
   font-weight: $fontWeight;
   color: $primaryFontColor;
   line-height: $lineHeight;
-  margin-top: 10px;
 }
 
 .alertPanel {
@@ -34,6 +33,15 @@ $primaryFontColor: #000;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
+  }
+  .alertPanel {
+    width: 80%;
+    margin: auto;
+  }
+  .redirectStatement {
+    width: 80%;
+    margin: auto;
+    padding: 5px 15px;
   }
 }
 
@@ -60,6 +68,15 @@ $primaryFontColor: #000;
     justify-content: center;
     column-gap: 20px;
   }
+  .alertPanel {
+    width: 80%;
+    margin: auto;
+  }
+  .redirectStatement {
+    width: 80%;
+    margin: auto;
+    padding: 5px 15px;
+  }
 }
 
 @media only screen and (max-width: 399px) {
@@ -71,5 +88,14 @@ $primaryFontColor: #000;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 30px;
+  }
+  .alertPanel {
+    width: 80%;
+    margin: auto;
+  }
+  .redirectStatement {
+    width: 80%;
+    margin: auto;
+    padding: 5px 15px;
   }
 }

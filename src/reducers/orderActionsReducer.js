@@ -11,10 +11,10 @@ const orderActionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case actions.PLACE_ORDER:
       return { ...state, order: addOrder };
-    case actions.ADD_TO_CART_ROM_HISTORY:
-      return { ...state, addItemToCart };
+    case actions.ADD_TO_CART_FROM_HISTORY:
+      return { ...state, order: addItemToCart };
     case actions.DELETE_FROM_HISTORY:
-      return { ...state, deleteItem };
+      return { ...state, order: deleteItem };
 
     default:
       return state;

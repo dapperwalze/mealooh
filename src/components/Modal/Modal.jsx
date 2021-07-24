@@ -41,6 +41,7 @@ const ModalComponent = ({ isModalVisible, setIsModalVisible }) => {
         addToCart(
           selectedItem.id,
           selectedItem.name,
+          selectedItem.type,
           selectedItem.amount,
           itemCount
         )
@@ -52,6 +53,7 @@ const ModalComponent = ({ isModalVisible, setIsModalVisible }) => {
       dispatch,
       selectedItem.id,
       selectedItem.name,
+      selectedItem.type,
       selectedItem.amount,
       itemCount,
       setIsModalVisible,
