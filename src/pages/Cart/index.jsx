@@ -1,9 +1,9 @@
-import React, { useState, useCallback } from "react";
+import React, { useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Button } from "antd";
+import { Button, Alert, notification } from "antd";
+import { SmileOutlined } from "@ant-design/icons";
 import { cartSelector } from "./../../reducers/cartActionsReducer";
 import { Link } from "react-router-dom";
-import { Alert } from "antd";
 import {
   calculateSubTotalAmount,
   calculateTotalAmount,
@@ -17,7 +17,6 @@ import styles from "./cart.module.scss";
 export const Cart = () => {
   const { cart } = useSelector(cartSelector);
   const dispatch = useDispatch();
-  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
 
   const handleClearCart = useCallback(() => {
     dispatch(emptyCart());
@@ -29,23 +28,19 @@ export const Cart = () => {
     },
     [dispatch]
   );
-  const showAlertComponent =
-    showSuccessAlert === true ? (
-      <Alert
-        message="Success!"
-        description="Order placed successfully."
-        type="success"
-        closable
-        onClose={() => setShowSuccessAlert(!showSuccessAlert)}
-        className={styles.successAlert}
-        showIcon
-      />
-    ) : null;
+
+  const openNotification = () => {
+    notification.open({
+      message: "Success!",
+      description: "Order placed successfully.",
+      icon: <SmileOutlined style={{ color: "#108ee9" }} />,
+    });
+  };
 
   const handlePlaceOrder = useCallback(
     (description, amount) => {
       dispatch(placeOrder(description, amount));
-      setShowSuccessAlert(true);
+      openNotification();
     },
     [dispatch]
   );
@@ -65,7 +60,6 @@ export const Cart = () => {
       </>
     ) : (
       <section className={styles.cartDetails}>
-        {showAlertComponent}
         <div className={styles.cartOptions}>
           <Link to="/">
             <Button className={styles.addMoreToButton} type="link">

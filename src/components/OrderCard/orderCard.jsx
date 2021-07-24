@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { useDispatch } from "react-redux";
-import { Button } from "antd";
+import { Button, Popconfirm, message } from "antd";
 import { currencyFormatter } from "./../../utils/helpers";
 import {
   addToCartFromHistory,
@@ -13,9 +13,14 @@ export const OrderCard = ({ orderId, orderDate, description, amount }) => {
   const dispatch = useDispatch();
   const formattedAmount = currencyFormatter(amount);
 
+  const confirm = () => {
+    message.success("Deleted from history");
+  };
+
   const handleRemoveItem = useCallback(
     (itemId) => {
       dispatch(deletefromHistory(itemId));
+      confirm();
     },
     [dispatch]
   );
@@ -32,14 +37,17 @@ export const OrderCard = ({ orderId, orderDate, description, amount }) => {
       <span className={styles.orderAmount}>{formattedAmount}</span>
 
       <div className={styles.btnGroup}>
-        <Button
-          onClick={() => handleRemoveItem(orderId)}
-          className={styles.dangerButton}
-          type="text"
-          danger
+        <Popconfirm
+          title="Are you sure you want to delete this item from your history?"
+          onConfirm={() => handleRemoveItem(orderId)}
+          okText="Yes"
+          cancelText="No"
         >
-          Delete from history
-        </Button>
+          <Button className={styles.dangerButton} type="text" danger>
+            Delete from history
+          </Button>{" "}
+        </Popconfirm>
+
         <Button
           onClick={() => handleAddToCart(description, amount)}
           type="link"
