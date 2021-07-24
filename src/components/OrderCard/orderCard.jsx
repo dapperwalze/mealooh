@@ -1,6 +1,7 @@
 import React, { useCallback } from "react";
 import { useDispatch } from "react-redux";
-import { Button, Popconfirm, message } from "antd";
+import { Button, Popconfirm, message, notification } from "antd";
+import { SmileOutlined } from "@ant-design/icons";
 import { currencyFormatter } from "./../../utils/helpers";
 import { deletefromHistory, placeOrder } from "../../actions/orderActions";
 
@@ -14,6 +15,13 @@ export const OrderCard = ({ orderId, orderDate, description, amount }) => {
     message.success("Deleted from history");
   };
 
+  const openNotification = () => {
+    notification.open({
+      message: "Success!",
+      description: "Order placed successfully.",
+      icon: <SmileOutlined style={{ color: "#108ee9" }} />,
+    });
+  };
   const handleRemoveItem = useCallback(
     (itemId) => {
       dispatch(deletefromHistory(itemId));
@@ -24,6 +32,7 @@ export const OrderCard = ({ orderId, orderDate, description, amount }) => {
 
   const handleReOrder = useCallback(() => {
     dispatch(placeOrder(description, amount));
+    openNotification();
   }, [dispatch, description, amount]);
 
   return (
