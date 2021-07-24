@@ -1,3 +1,3 @@
 # MealOoh
 
-## Meal ordering application.
+Meal ordering application.
