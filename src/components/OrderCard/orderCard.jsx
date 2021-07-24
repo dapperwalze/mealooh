@@ -19,7 +19,7 @@ export const OrderCard = ({ orderId, orderDate, description, amount }) => {
     notification.open({
       message: "Success!",
       description: "Order placed successfully.",
-      icon: <SmileOutlined style={{ color: "#108ee9" }} />,
+      icon: <SmileOutlined style={{ color: "#25f525" }} />,
     });
   };
   const handleRemoveItem = useCallback(
