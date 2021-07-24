@@ -2,10 +2,7 @@ import React, { useCallback } from "react";
 import { useDispatch } from "react-redux";
 import { Button, Popconfirm, message } from "antd";
 import { currencyFormatter } from "./../../utils/helpers";
-import {
-  addToCartFromHistory,
-  deletefromHistory,
-} from "../../actions/orderActions";
+import { deletefromHistory, placeOrder } from "../../actions/orderActions";
 
 import styles from "./orderCard.module.scss";
 
@@ -25,8 +22,8 @@ export const OrderCard = ({ orderId, orderDate, description, amount }) => {
     [dispatch]
   );
 
-  const handleAddToCart = useCallback(() => {
-    dispatch(addToCartFromHistory(description, amount));
+  const handleReOrder = useCallback(() => {
+    dispatch(placeOrder(description, amount));
   }, [dispatch, description, amount]);
 
   return (
@@ -49,11 +46,11 @@ export const OrderCard = ({ orderId, orderDate, description, amount }) => {
         </Popconfirm>
 
         <Button
-          onClick={() => handleAddToCart(description, amount)}
+          onClick={() => handleReOrder(description, amount)}
           type="link"
           className={styles.addToCartButton}
         >
-          Add To Cart
+          Re-Order
         </Button>
       </div>
     </div>
