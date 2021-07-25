@@ -3,11 +3,11 @@ import { useLocation, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchFoodItems } from "./../../actions/foodItemsActions";
 import { foodItemsSelector } from "../../reducers/foodItemsReducer";
-import { Card } from "../../components/Card/index";
+import { FoodItemCard } from "./../../components/Cards/FoodItemCard";
 import { foodList } from "../../mealData/foodList";
 import styles from "./home.module.scss";
 
-export const Home = ({ setIsModalVisible }) => {
+export const Home = ({ handleSetIsModalVisible }) => {
   let location = useLocation();
   const dispatch = useDispatch();
   const { isLoading, foodItems, hasErrors } = useSelector(foodItemsSelector);
@@ -24,12 +24,12 @@ export const Home = ({ setIsModalVisible }) => {
         state: { background: location },
       }}
     >
-      <Card
+      <FoodItemCard
         alt={item.name}
         url={item.url}
         name={item.name}
         amount={item.amount}
-        setIsModalVisible={setIsModalVisible}
+        onClick={handleSetIsModalVisible}
       />
     </Link>
   ));
@@ -42,12 +42,12 @@ export const Home = ({ setIsModalVisible }) => {
         state: { background: location },
       }}
     >
-      <Card
+      <FoodItemCard
         alt={item.name}
         url={item.url}
         name={item.name}
         amount={item.amount}
-        setIsModalVisible={setIsModalVisible}
+        onClick={handleSetIsModalVisible}
       />
     </Link>
   ));

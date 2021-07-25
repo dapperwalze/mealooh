@@ -5,11 +5,11 @@ import PageFooter from "./footer";
 import PageContent from "./content";
 import styles from "./layout.module.scss";
 
-const PageLayout = ({ children }) => {
+const PageLayout = () => {
   return (
     <Layout className={styles.layout}>
       <PageHeader />
-      <PageContent>{children}</PageContent>
+      <PageContent />
       <PageFooter />
     </Layout>
   );

@@ -2,13 +2,10 @@ export const ADD_TO_CART = "ADD_TO_CART";
 export const DELETE_FROM_CART = "DELETE_FROM_CART";
 export const EMPTY_CART = "EMPTY_CART";
 
-export const addToCart = (id, name, type, amount, quantity) => ({
+export const addToCart = (item, quantity) => ({
   type: ADD_TO_CART,
   payload: {
-    id,
-    name,
-    type,
-    amount,
+    item,
     quantity,
   },
 });

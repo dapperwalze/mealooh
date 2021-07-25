@@ -5,9 +5,9 @@ import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
-import App from "./app/App";
+import App from "./App";
+import styles from "./main.module.scss";
 import rootReducer from "./reducers/index";
-import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 const store = createStore(
@@ -18,7 +18,7 @@ const store = createStore(
 ReactDOM.render(
   <Router>
     <Provider store={store}>
-      <App />
+      <App className={styles.app} />
     </Provider>
   </Router>,
   document.getElementById("root")

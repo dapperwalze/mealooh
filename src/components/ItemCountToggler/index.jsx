@@ -3,15 +3,15 @@ import styles from "./itemCountToggler.module.scss";
 
 export const ItemCountToggler = ({
   itemCount,
-  decrementCount,
-  incrementCount,
+  handleDecrementCount,
+  handleIncrementCount,
 }) => {
   return (
     <div className={styles.selectedProductCountContainer}>
       <button
         type="button"
         className={styles.decrementButton}
-        onClick={decrementCount}
+        onClick={handleDecrementCount}
       >
         -
       </button>
@@ -19,7 +19,7 @@ export const ItemCountToggler = ({
       <button
         type="button"
         className={styles.incrementButton}
-        onClick={incrementCount}
+        onClick={handleIncrementCount}
       >
         +
       </button>

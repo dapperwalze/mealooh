@@ -5,10 +5,10 @@ import { SmileOutlined } from "@ant-design/icons";
 import { cartSelector } from "./../../reducers/cartActionsReducer";
 import { Link } from "react-router-dom";
 import {
-  calculateSubTotalAmount,
-  calculateTotalAmount,
-  currencyFormatter,
-  getOrderDescription,
+  handleCalculateSubTotalAmount,
+  handleCalculateTotalAmount,
+  handleCurrencyFormatting,
+  handleGetOrderDescription,
 } from "./../../utils/helpers";
 import { emptyCart, deleteFromCart } from "../../actions/cartActions";
 import { placeOrder } from "../../actions/orderActions";
@@ -29,7 +29,7 @@ export const Cart = () => {
     [dispatch]
   );
 
-  const openNotification = () => {
+  const handleOpenNotification = () => {
     notification.open({
       message: "Success!",
       description: "Order placed successfully.",
@@ -40,7 +40,10 @@ export const Cart = () => {
   const handlePlaceOrder = useCallback(
     (description, amount) => {
       dispatch(placeOrder(description, amount));
-      openNotification();
+      handleOpenNotification();
+      setTimeout(() => {
+        dispatch(emptyCart());
+      }, 1000);
     },
     [dispatch]
   );
@@ -77,17 +80,19 @@ export const Cart = () => {
           </Button>
         </div>
 
-        {cart.map((item) => (
-          <section key={item.id} className={styles.cartItem}>
-            <span className={styles.itemName}>{item.name} </span>
+        {cart.map((cartItem) => (
+          <section key={cartItem.item.id} className={styles.cartItem}>
+            <span className={styles.itemName}>{cartItem.item.name} </span>
             <span className={styles.itemAmount}>
-              {currencyFormatter(item.amount)}
-              {item.type === "food" ? " per portion" : ""}
+              {handleCurrencyFormatting(cartItem.item.amount)}
+              {cartItem.item.type === "food" ? " per portion" : ""}
             </span>
-            <span className={styles.itemQuantity}>qty: {item.quantity}</span>
+            <span className={styles.itemQuantity}>
+              qty: {cartItem.quantity}
+            </span>
             <span className={styles.removeItem}>
               <Button
-                onClick={() => handleRemoveItem(item.id)}
+                onClick={() => handleRemoveItem(cartItem.item.id)}
                 className={styles.dangerButton}
                 type="text"
                 danger
@@ -103,7 +108,7 @@ export const Cart = () => {
             <div className={styles.displayPanel}>
               <span className={styles.label}>Subtotal </span>
               <span className={styles.subTotal}>
-                {calculateSubTotalAmount(cart, currencyFormatter)}
+                {handleCalculateSubTotalAmount(cart, handleCurrencyFormatting)}
               </span>
             </div>
 
@@ -122,7 +127,7 @@ export const Cart = () => {
             <div className={styles.displayPanel}>
               <span className={styles.label}>Total </span>
               <span className={styles.total}>
-                {calculateTotalAmount(cart, currencyFormatter)}
+                {handleCalculateTotalAmount(cart, handleCurrencyFormatting)}
               </span>
             </div>
           </div>
@@ -130,8 +135,8 @@ export const Cart = () => {
           <Button
             onClick={() =>
               handlePlaceOrder(
-                getOrderDescription(cart),
-                calculateTotalAmount(cart)
+                handleGetOrderDescription(cart),
+                handleCalculateTotalAmount(cart)
               )
             }
             className={styles.placeOrder}

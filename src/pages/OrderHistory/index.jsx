@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { orderSelector } from "./../../reducers/orderActionsReducer";
 import { Link } from "react-router-dom";
 import { Alert } from "antd";
-import { OrderCard } from "./../../components/OrderCard/orderCard";
+import { OrderCard } from "../../components/Cards/OrderCard";
 import styles from "./orderHistory.module.scss";
 
 export const OrderHistory = () => {

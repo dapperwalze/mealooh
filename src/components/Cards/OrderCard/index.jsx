@@ -2,14 +2,13 @@ import React, { useCallback } from "react";
 import { useDispatch } from "react-redux";
 import { Button, Popconfirm, message, notification } from "antd";
 import { SmileOutlined } from "@ant-design/icons";
-import { currencyFormatter } from "./../../utils/helpers";
-import { deletefromHistory, placeOrder } from "../../actions/orderActions";
-
+import { handleCurrencyFormatting } from "./../../../utils/helpers";
+import { deletefromHistory, placeOrder } from "../../../actions/orderActions";
 import styles from "./orderCard.module.scss";
 
 export const OrderCard = ({ orderId, orderDate, description, amount }) => {
   const dispatch = useDispatch();
-  const formattedAmount = currencyFormatter(amount);
+  const formattedAmount = handleCurrencyFormatting(amount);
 
   const confirm = () => {
     message.success("Deleted from history");

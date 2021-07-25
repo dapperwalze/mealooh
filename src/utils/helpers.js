@@ -1,47 +1,47 @@
-export const currencyFormatter = (amount) => {
+export const handleCurrencyFormatting = (amount) => {
   return new Intl.NumberFormat("ng-NG", {
     style: "currency",
     currency: "NGN",
   }).format(amount);
 };
 
-export const calculateSubTotalAmount = (arr, currencyFormatter) => {
+export const handleCalculateSubTotalAmount = (arr, currencyFormatter) => {
   const reducedValue = arr.reduce(
     (accumulator, current) =>
-      accumulator + parseInt(current.amount) * parseInt(current.quantity),
+      accumulator + parseInt(current.item.amount) * parseInt(current.quantity),
     0
   );
-  return currencyFormatter(reducedValue);
+  return handleCurrencyFormatting(reducedValue);
 };
 
-export const calculateTotalAmount = (
+export const handleCalculateTotalAmount = (
   arr,
-  currencyFormatter = null,
+  handleCurrencyFormatting = null,
   discount = 0
 ) => {
   const reducedValue = arr.reduce(
     (accumulator, current) =>
-      accumulator + parseInt(current.amount) * parseInt(current.quantity),
+      accumulator + parseInt(current.item.amount) * parseInt(current.quantity),
     0
   );
   const amountAfterDiscount = reducedValue - (discount / 100) * reducedValue;
-  if (currencyFormatter === null) {
+  if (handleCurrencyFormatting === null) {
     return amountAfterDiscount;
   }
-  return currencyFormatter(amountAfterDiscount);
+  return handleCurrencyFormatting(amountAfterDiscount);
 };
 
-export const getOrderDescription = (arr) => {
+export const handleGetOrderDescription = (arr) => {
   let description = "";
   if (arr.length > 0) {
     arr.forEach((orderItem) => {
-      description = description + ", " + orderItem.name;
+      description = description + ", " + orderItem.item.name;
       if (arr.indexOf(orderItem) === 0) {
-        return (description = orderItem.name);
+        return (description = orderItem.item.name);
       } else if (arr.indexOf(orderItem) !== arr.length - 1) {
-        return description + ", " + orderItem.name;
+        return description + ", " + orderItem.item.name;
       } else {
-        return description + ", " + orderItem.name;
+        return description + ", " + orderItem.item.name;
       }
     });
   }

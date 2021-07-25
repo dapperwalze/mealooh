@@ -1,14 +1,14 @@
-import { currencyFormatter } from "./../../utils/helpers";
+import { handleCurrencyFormatting } from "../../utils/helpers";
 import styles from "./card.module.scss";
 
-export const Card = ({ alt, url, name, amount, setIsModalVisible }) => {
-  const handleClick = () => {
-    setIsModalVisible(true);
+export const FoodItemCard = ({ alt, url, name, amount, onClick }) => {
+  const handleCardClick = () => {
+    onClick(true);
   };
-  const formattedAmount = currencyFormatter(amount);
+  const formattedAmount = handleCurrencyFormatting(amount);
 
   return (
-    <div className={styles.itemCard} onClick={handleClick}>
+    <div className={styles.itemCard} onClick={handleCardClick}>
       <div className={styles.itemImageContainer}>
         <img className={styles.itemImage} alt={alt} src={url} />
       </div>

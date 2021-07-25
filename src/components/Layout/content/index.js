@@ -18,7 +18,7 @@ const PageContent = () => {
     <Content className={styles.content}>
       <Switch location={background || location}>
         <Route exact path="/">
-          <Home setIsModalVisible={setIsModalVisible} />
+          <Home handleSetIsModalVisible={setIsModalVisible} />
         </Route>
         <Route path="/cart">
           <Cart />
@@ -31,7 +31,7 @@ const PageContent = () => {
         <Route path="/meals/item-details/:id">
           <ModalComponent
             isModalVisible={isModalVisible}
-            setIsModalVisible={setIsModalVisible}
+            handleSetIsModalVisible={setIsModalVisible}
           />
         </Route>
       )}

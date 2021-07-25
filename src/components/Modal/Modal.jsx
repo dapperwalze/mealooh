@@ -9,56 +9,39 @@ import { addToCart } from "./../../actions/cartActions";
 import allFoodItems from "../../mealData/index";
 import styles from "./modal.module.scss";
 
-const ModalComponent = ({ isModalVisible, setIsModalVisible }) => {
+const ModalComponent = ({ isModalVisible, handleSetIsModalVisible }) => {
   const dispatch = useDispatch();
   let history = useHistory();
   let { id } = useParams();
   let selectedItem = allFoodItems.find((item) => item.id === id);
   const [itemCount, setItemCount] = useState(1);
 
-  const decrementCount = useCallback(() => {
+  const handleDecrementCount = useCallback(() => {
     setItemCount((itemCount) =>
       itemCount > 1 ? itemCount - 1 : (itemCount = 1)
     );
   }, []);
 
-  const incrementCount = useCallback(() => {
+  const handleIncrementCount = useCallback(() => {
     setItemCount((itemCount) => itemCount + 1);
   }, []);
 
   const handleCancel = useCallback(
     (e) => {
       e.stopPropagation();
-      setIsModalVisible(false);
+      handleSetIsModalVisible(false);
       history.goBack();
     },
-    [history, setIsModalVisible]
+    [history, handleSetIsModalVisible]
   );
 
   const handleAddToCart = useCallback(
     (e) => {
-      dispatch(
-        addToCart(
-          selectedItem.id,
-          selectedItem.name,
-          selectedItem.type,
-          selectedItem.amount,
-          itemCount
-        )
-      );
-      setIsModalVisible(false);
+      dispatch(addToCart(selectedItem, itemCount));
+      handleSetIsModalVisible(false);
       history.goBack();
     },
-    [
-      dispatch,
-      selectedItem.id,
-      selectedItem.name,
-      selectedItem.type,
-      selectedItem.amount,
-      itemCount,
-      setIsModalVisible,
-      history,
-    ]
+    [dispatch, selectedItem, itemCount, handleSetIsModalVisible, history]
   );
 
   if (!selectedItem) return null;
@@ -98,8 +81,8 @@ const ModalComponent = ({ isModalVisible, setIsModalVisible }) => {
           />
           <ItemCountToggler
             itemCount={itemCount}
-            decrementCount={decrementCount}
-            incrementCount={incrementCount}
+            handleDecrementCount={handleDecrementCount}
+            handleIncrementCount={handleIncrementCount}
           />
         </div>
       </section>

@@ -6,7 +6,9 @@ export const initialState = {
 
 const cartActionsReducer = (state = initialState, action) => {
   const addItem = state.cart.concat(action.payload);
-  const deleteItem = state.cart.filter((item) => item.id !== action.payload);
+  const deleteItem = state.cart.filter(
+    (cartItem) => cartItem.item.id !== action.payload
+  );
 
   switch (action.type) {
     case actions.ADD_TO_CART:
