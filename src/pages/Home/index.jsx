@@ -16,7 +16,7 @@ export const Home = ({ handleSetIsModalVisible }) => {
     dispatch(fetchFoodItems());
   }, [dispatch]);
 
-  const popularFoodItems = foodList.map((item) => (
+  const popularFoodItems = foodList.slice(0, 14).map((item) => (
     <Link
       key={item.id}
       to={{

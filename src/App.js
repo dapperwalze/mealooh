@@ -1,5 +1,4 @@
 import React, { Suspense, lazy } from "react";
-import "antd/dist/antd.min.css";
 import "./normalize.css";
 
 const PageLayout = lazy(() => import("./components/Layout"));

@@ -5,7 +5,10 @@ export const handleCurrencyFormatting = (amount) => {
   }).format(amount);
 };
 
-export const handleCalculateSubTotalAmount = (arr, currencyFormatter) => {
+export const handleCalculateSubTotalAmount = (
+  arr,
+  handleCurrencyFormatting
+) => {
   const reducedValue = arr.reduce(
     (accumulator, current) =>
       accumulator + parseInt(current.item.amount) * parseInt(current.quantity),
@@ -35,13 +38,12 @@ export const handleGetOrderDescription = (arr) => {
   let description = "";
   if (arr.length > 0) {
     arr.forEach((orderItem) => {
-      description = description + ", " + orderItem.item.name;
       if (arr.indexOf(orderItem) === 0) {
         return (description = orderItem.item.name);
-      } else if (arr.indexOf(orderItem) !== arr.length - 1) {
-        return description + ", " + orderItem.item.name;
+      } else if (arr.indexOf(orderItem) === arr.length - 1) {
+        return (description += " & " + orderItem.item.name);
       } else {
-        return description + ", " + orderItem.item.name;
+        return (description += ", " + orderItem.item.name);
       }
     });
   }

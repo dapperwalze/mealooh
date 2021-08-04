@@ -7,6 +7,7 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 import App from "./App";
 import styles from "./main.module.scss";
+import "antd/dist/antd.min.css";
 import rootReducer from "./reducers/index";
 import reportWebVitals from "./reportWebVitals";
 
