@@ -11,6 +11,9 @@ $bgColor: #ec7b04;
   margin-bottom: 100px;
 }
 .sectionHeader {
+  max-width: 1300px;
+  padding: 0 1%;
+  margin: auto;
   font-family: $fontFamily;
   font-size: $fontSize;
   font-weight: $fontWeight;
@@ -19,43 +22,35 @@ $bgColor: #ec7b04;
 }
 .foodItemsContainer {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  column-gap: 25px;
-  row-gap: 50px;
-}
-@media only screen and (max-width: 1067px) {
-  .foodItemsContainer {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    column-gap: 10px;
-    row-gap: 50px;
-  }
+  max-width: 1300px;
+  padding: 0 1%;
+  margin: auto;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 700px) {
-  .foodItemsContainer {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 10px;
-    row-gap: 50px;
-  }
+.allCategoryFooter {
+  width: 100%;
+  height: 3.4375rem;
+  margin-top: 5rem;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
+.emptyState {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 1%;
+  margin: auto;
+  font-family: $fontFamily;
+  font-size: 1rem;
+  font-weight: $fontWeight;
+  color: $primaryFontColor;
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 399px) {
   .contentSection {
     width: 100%;
     margin-bottom: 100px;
-  }
-  .foodItemsContainer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    column-gap: 0px;
-    row-gap: 30px;
   }
 }

@@ -7,12 +7,18 @@ $secondaryFontColor: #fff;
 $bgColor: #ec7b04;
 
 .itemCard {
-  width: 180px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+
   &:hover {
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.3),
+      0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 4.9);
+    -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 4.9);
+
     .itemDetails {
       background-color: #008000;
     }

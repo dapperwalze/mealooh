@@ -1,8 +1,10 @@
 import React, { Suspense, lazy } from "react";
+import { LoadingOutlined } from "@ant-design/icons";
 import "./normalize.css";
 
 const PageLayout = lazy(() => import("./components/Layout"));
-const LazyFallback = () => <h4>Loading...</h4>;
+const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
+const LazyFallback = () => antIcon;
 
 const App = () => {
   return (

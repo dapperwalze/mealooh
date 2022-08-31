@@ -7,6 +7,8 @@ import { ItemName } from "./../ItemName/index";
 import { ItemPrice } from "./../ItemPrice/index";
 import { addToCart } from "./../../actions/cartActions";
 import allFoodItems from "../../mealData/index";
+import { notification } from "antd";
+import { SmileOutlined } from "@ant-design/icons";
 import styles from "./modal.module.scss";
 
 const ModalComponent = ({ isModalVisible, handleSetIsModalVisible }) => {
@@ -35,10 +37,19 @@ const ModalComponent = ({ isModalVisible, handleSetIsModalVisible }) => {
     [history, handleSetIsModalVisible]
   );
 
+  const openNotification = () => {
+    notification.open({
+      message: "Success!",
+      description: "Item added successfully.",
+      icon: <SmileOutlined style={{ color: "#25f525" }} />,
+      placement: "bottomRight",
+    });
+  };
   const handleAddToCart = useCallback(
     (e) => {
       dispatch(addToCart(selectedItem, itemCount));
       handleSetIsModalVisible(false);
+      openNotification();
       history.goBack();
     },
     [dispatch, selectedItem, itemCount, handleSetIsModalVisible, history]

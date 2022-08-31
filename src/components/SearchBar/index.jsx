@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState, useContext } from "react";
+import { Context } from "./../../_shared";
 import SearchIcon from "./search-icon.png";
 import styles from "./searchBar.module.scss";
 
 export const SearchBar = () => {
+  const { keyword, setKeyword } = useContext(Context);
+  const [searchValue, setSearchValue] = useState(keyword);
+
   const handleChange = (e) => {
-    //const keyword = e.target.value;
-    //setSearchValue(keyword);
+    const value = e.target.value;
+    setSearchValue(value);
   };
+
+  setKeyword(searchValue);
 
   return (
     <div className={styles.searchBox}>

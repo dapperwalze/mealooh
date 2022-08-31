@@ -1,3 +1,5 @@
+import _ from "lodash";
+
 export const handleCurrencyFormatting = (amount) => {
   return new Intl.NumberFormat("ng-NG", {
     style: "currency",
@@ -9,12 +11,12 @@ export const handleCalculateSubTotalAmount = (
   arr,
   handleCurrencyFormatting
 ) => {
-  const reducedValue = arr.reduce(
+  const subtotalAmount = arr.reduce(
     (accumulator, current) =>
       accumulator + parseInt(current.item.amount) * parseInt(current.quantity),
     0
   );
-  return handleCurrencyFormatting(reducedValue);
+  return handleCurrencyFormatting(subtotalAmount);
 };
 
 export const handleCalculateTotalAmount = (
@@ -22,16 +24,16 @@ export const handleCalculateTotalAmount = (
   handleCurrencyFormatting = null,
   discount = 0
 ) => {
-  const reducedValue = arr.reduce(
+  const totalAmount = arr.reduce(
     (accumulator, current) =>
       accumulator + parseInt(current.item.amount) * parseInt(current.quantity),
     0
   );
-  const amountAfterDiscount = reducedValue - (discount / 100) * reducedValue;
-  if (handleCurrencyFormatting === null) {
-    return amountAfterDiscount;
+  const amountAfterDiscount = totalAmount - (discount / 100) * totalAmount;
+  if (handleCurrencyFormatting) {
+    return handleCurrencyFormatting(amountAfterDiscount);
   }
-  return handleCurrencyFormatting(amountAfterDiscount);
+  return amountAfterDiscount;
 };
 
 export const handleGetOrderDescription = (arr) => {
@@ -40,12 +42,26 @@ export const handleGetOrderDescription = (arr) => {
     arr.forEach((orderItem) => {
       if (arr.indexOf(orderItem) === 0) {
         return (description = orderItem.item.name);
-      } else if (arr.indexOf(orderItem) === arr.length - 1) {
-        return (description += " & " + orderItem.item.name);
-      } else {
-        return (description += ", " + orderItem.item.name);
       }
+      if (arr.indexOf(orderItem) === arr.length - 1) {
+        return (description = `${description} ${" & "} ${orderItem.item.name}`);
+      }
+      return (description = `${description}${", "} ${orderItem.item.name}`);
     });
   }
   return description;
+};
+
+export const handlePagination = (items, pageNumber, pageSize) => {
+  const startIndex = (pageNumber - 1) * pageSize;
+  return _(items).slice(startIndex).take(pageSize).value();
+};
+
+export const handleSearchProducts = (data, keyword) => {
+  return data.filter(({ name }) => {
+    return (
+      keyword.length === 0 ||
+      name?.toLowerCase()?.includes(keyword?.toLowerCase())
+    );
+  });
 };

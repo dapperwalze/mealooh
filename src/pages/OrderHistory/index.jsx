@@ -9,7 +9,7 @@ import styles from "./orderHistory.module.scss";
 export const OrderHistory = () => {
   const { order } = useSelector(orderSelector);
 
-  const showAlert =
+  const showOrders =
     order.length < 1 ? (
       <>
         <Alert
@@ -36,5 +36,5 @@ export const OrderHistory = () => {
       </div>
     );
 
-  return <section className={styles.orderHistorySection}>{showAlert}</section>;
+  return <section className={styles.orderHistorySection}>{showOrders}</section>;
 };

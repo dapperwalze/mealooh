@@ -5,6 +5,7 @@ import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
+import { Provider as ContextProvider } from "./_shared/index";
 import App from "./App";
 import styles from "./main.module.scss";
 import "antd/dist/antd.min.css";
@@ -18,9 +19,11 @@ const store = createStore(
 
 ReactDOM.render(
   <Router>
-    <Provider store={store}>
-      <App className={styles.app} />
-    </Provider>
+    <ContextProvider>
+      <Provider store={store}>
+        <App className={styles.app} />
+      </Provider>
+    </ContextProvider>
   </Router>,
   document.getElementById("root")
 );
